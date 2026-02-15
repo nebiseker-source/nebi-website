@@ -1,0 +1,232 @@
+:root {
+  --bg: #15171a;
+  --text: #f1f3f5;
+  --muted: #a8b0b8;
+  --primary: #ff7a3d;
+  --secondary: #55d6be;
+  --panel: rgba(34, 38, 44, 0.84);
+  --stroke: rgba(241, 243, 245, 0.12);
+  --shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 15% 20%, #2a2f36 0%, var(--bg) 42%),
+    radial-gradient(circle at 85% 80%, #1f2a2e 0%, var(--bg) 45%);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-shape {
+  position: fixed;
+  z-index: -1;
+  filter: blur(1px);
+  opacity: 0.55;
+}
+
+.bg-shape-a {
+  width: 360px;
+  height: 360px;
+  border-radius: 42% 58% 67% 33% / 37% 43% 57% 63%;
+  background: linear-gradient(130deg, #4d5967, #2d333b);
+  top: -100px;
+  right: -80px;
+}
+
+.bg-shape-b {
+  width: 280px;
+  height: 280px;
+  border-radius: 56% 44% 29% 71% / 62% 35% 65% 38%;
+  background: linear-gradient(160deg, #3a444f, #25303b);
+  bottom: -80px;
+  left: -40px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 7vw;
+  backdrop-filter: blur(10px);
+  background: rgba(21, 23, 26, 0.84);
+  border-bottom: 1px solid var(--stroke);
+  z-index: 5;
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--text);
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+main {
+  width: min(1000px, 92vw);
+  margin: 0 auto;
+  padding: 32px 0 60px;
+}
+
+.hero {
+  min-height: calc(90vh - 70px);
+  display: grid;
+  align-content: center;
+  gap: 16px;
+}
+
+.kicker {
+  margin: 0;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 9vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: 1.5px;
+}
+
+.subtitle {
+  margin: 0;
+  max-width: 650px;
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.hero-actions {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 11px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.btn-ghost {
+  border: 1.5px solid var(--text);
+  color: var(--text);
+}
+
+.panel {
+  border: 1px solid var(--stroke);
+  border-radius: 20px;
+  background: var(--panel);
+  padding: clamp(18px, 3vw, 32px);
+  margin-bottom: 22px;
+  box-shadow: var(--shadow);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+}
+
+p {
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card {
+  border: 1px solid var(--stroke);
+  border-radius: 14px;
+  background: #1c1f24;
+  padding: 14px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-grid a {
+  display: inline-flex;
+  width: fit-content;
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+footer {
+  width: min(1000px, 92vw);
+  margin: 0 auto;
+  padding: 0 0 30px;
+  color: var(--muted);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    padding: 14px 4vw;
+  }
+
+  .menu {
+    gap: 14px;
+  }
+}

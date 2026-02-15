@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebi Şeker | Kişisel Web Sitesi</title>
+  <meta
+    name="description"
+    content="Nebi Şeker'in kişisel web sitesi: hakkımda, yetkinlikler, projeler ve iletişim."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-a"></div>
+  <div class="bg-shape bg-shape-b"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#anasayfa">Nebi Şeker</a>
+    <nav class="menu">
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#projeler">Projeler</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="anasayfa" class="hero reveal">
+      <p class="kicker">Kişisel Portfolyo</p>
+      <h1>Nebi Şeker</h1>
+      <p class="subtitle">
+        Üreten, araştıran ve fikri ürüne dönüştürmeyi seven bir geliştirici.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#iletisim">İletişime Geç</a>
+        <a class="btn btn-ghost" href="#projeler">Projeleri Gör</a>
+      </div>
+    </section>
+
+    <section id="hakkimda" class="panel reveal">
+      <h2>Hakkımda</h2>
+      <p>
+        Merhaba, ben Nebi. Yazılım, tasarım ve ürün geliştirme alanlarında sade,
+        etkili ve ölçeklendirilebilir çözümler üretmeyi hedefliyorum.
+      </p>
+      <p>
+        Odak alanlarım: web uygulamaları, kullanıcı deneyimi ve performans.
+      </p>
+    </section>
+
+    <section id="projeler" class="panel reveal">
+      <h2>Öne Çıkan Projeler</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Proje 01</h3>
+          <p>Gerçek dünya ihtiyacına odaklanan modern bir web uygulaması.</p>
+        </article>
+        <article class="card">
+          <h3>Proje 02</h3>
+          <p>Kullanıcı deneyimi ve hız odaklı, mobil uyumlu bir arayüz çalışması.</p>
+        </article>
+        <article class="card">
+          <h3>Proje 03</h3>
+          <p>Veri görselleştirme ve karar destek süreçlerini kolaylaştıran araç.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="iletisim" class="panel reveal">
+      <h2>İletişim</h2>
+      <p>Birlikte çalışmak istersen bana ulaşabilirsin.</p>
+      <div class="contact-grid">
+        <a href="mailto:nebiseker@gmail.com">nebiseker@gmail.com</a>
+        <a href="https://www.linkedin.com/in/nebiseker/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/nebiseker-source?tab=projects" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nebi Şeker</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

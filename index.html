@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101214" />
   <title>Nebi Şeker | Kişisel Web Sitesi</title>
   <meta
     name="description"
@@ -11,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="styles.css" />
@@ -21,8 +22,14 @@
   <div class="bg-shape bg-shape-b"></div>
 
   <header class="topbar">
-    <a class="brand" href="#anasayfa">Nebi Şeker</a>
-    <nav class="menu">
+    <a class="brand" href="#anasayfa">
+      <span class="brand-mark">NS</span>
+      <span class="brand-name">Nebi Şeker</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+      Menü
+    </button>
+    <nav class="menu" id="site-menu">
       <a href="#hakkimda">Hakkımda</a>
       <a href="#projeler">Projeler</a>
       <a href="#iletisim">İletişim</a>
@@ -34,11 +41,11 @@
       <p class="kicker">Kişisel Portfolyo</p>
       <h1>Nebi Şeker</h1>
       <p class="subtitle">
-        Üreten, araştıran ve fikri ürüne dönüştürmeyi seven bir geliştirici.
+        Full-stack geliştirici olarak hızlı, ölçeklenebilir ve dönüşüm odaklı web ürünleri geliştiriyorum.
       </p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#iletisim">İletişime Geç</a>
-        <a class="btn btn-ghost" href="#projeler">Projeleri Gör</a>
+        <a class="btn btn-primary" href="#projeler">Projelerimi İncele</a>
+        <a class="btn btn-ghost" href="#iletisim">Proje Konuşalım</a>
       </div>
     </section>
 
@@ -59,14 +66,32 @@
         <article class="card">
           <h3>Proje 01</h3>
           <p>Gerçek dünya ihtiyacına odaklanan modern bir web uygulaması.</p>
+          <p class="tech-stack"><strong>Kullanılan teknoloji:</strong> React, Node.js, PostgreSQL</p>
+          <span class="card-tag">Web Uygulaması</span>
+          <div class="project-actions">
+            <a class="btn btn-primary btn-sm" href="https://example.com/demo-proje-01" target="_blank" rel="noreferrer">Canlı Demo</a>
+            <a class="btn btn-ghost btn-sm" href="https://example.com/kod-proje-01" target="_blank" rel="noreferrer">Kod</a>
+          </div>
         </article>
         <article class="card">
           <h3>Proje 02</h3>
           <p>Kullanıcı deneyimi ve hız odaklı, mobil uyumlu bir arayüz çalışması.</p>
+          <p class="tech-stack"><strong>Kullanılan teknoloji:</strong> Next.js, TypeScript, Tailwind CSS</p>
+          <span class="card-tag">UX / Frontend</span>
+          <div class="project-actions">
+            <a class="btn btn-primary btn-sm" href="https://example.com/demo-proje-02" target="_blank" rel="noreferrer">Canlı Demo</a>
+            <a class="btn btn-ghost btn-sm" href="https://example.com/kod-proje-02" target="_blank" rel="noreferrer">Kod</a>
+          </div>
         </article>
         <article class="card">
           <h3>Proje 03</h3>
           <p>Veri görselleştirme ve karar destek süreçlerini kolaylaştıran araç.</p>
+          <p class="tech-stack"><strong>Kullanılan teknoloji:</strong> Vue, D3.js, Firebase</p>
+          <span class="card-tag">Data Viz</span>
+          <div class="project-actions">
+            <a class="btn btn-primary btn-sm" href="https://example.com/demo-proje-03" target="_blank" rel="noreferrer">Canlı Demo</a>
+            <a class="btn btn-ghost btn-sm" href="https://example.com/kod-proje-03" target="_blank" rel="noreferrer">Kod</a>
+          </div>
         </article>
       </div>
     </section>

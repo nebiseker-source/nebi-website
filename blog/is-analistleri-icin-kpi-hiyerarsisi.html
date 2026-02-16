@@ -1,20 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ä°ÅŸ Analistleri iÃ§in KPI HiyerarÅŸisi | Nebi Åeker Blog</title>
-  <meta name="description" content="Veri bilimi projelerinde North Star metrikten alt KPI setine kadar Ã¶lÃ§Ã¼m hiyerarÅŸisi nasÄ±l kurulur?" />
+  <title>İş Analistleri için KPI Hiyerarşisi | Nebi Şeker Blog</title>
+  <meta name="description" content="Veri bilimi projelerinde North Star metrikten alt KPI setine kadar ölçüm hiyerarşisi nasıl kurulur?" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://nebi-website.pages.dev/blog/is-analistleri-icin-kpi-hiyerarsisi.html" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Ä°ÅŸ Analistleri iÃ§in KPI HiyerarÅŸisi" />
-  <meta property="og:description" content="ÃœrÃ¼n ve operasyon ekipleri iÃ§in Ã¶lÃ§Ã¼lebilir metrik mimarisi." />
+  <meta property="og:title" content="İş Analistleri için KPI Hiyerarşisi" />
+  <meta property="og:description" content="Ürün ve operasyon ekipleri için ölçülebilir metrik mimarisi." />
   <meta property="og:url" content="https://nebi-website.pages.dev/blog/is-analistleri-icin-kpi-hiyerarsisi.html" />
   <meta property="og:image" content="https://nebi-website.pages.dev/assets/blog/metrik-hiyerarsi.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ä°ÅŸ Analistleri iÃ§in KPI HiyerarÅŸisi" />
-  <meta name="twitter:description" content="North Star, ana KPI ve alt KPI tasarÄ±m rehberi." />
+  <meta name="twitter:title" content="İş Analistleri için KPI Hiyerarşisi" />
+  <meta name="twitter:description" content="North Star, ana KPI ve alt KPI tasarım rehberi." />
   <meta name="twitter:image" content="https://nebi-website.pages.dev/assets/blog/metrik-hiyerarsi.svg" />
   <link rel="icon" type="image/png" href="../assets/favicon.png" />
   <link rel="manifest" href="../site.webmanifest" />
@@ -31,58 +31,59 @@
   <header class="topbar">
     <a class="brand" href="../index.html#anasayfa">
       <span class="brand-mark">NS</span>
-      <span class="brand-name">Nebi Åeker</span>
+      <span class="brand-name">Nebi Şeker</span>
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">MenÃ¼</button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menü</button>
     <nav class="menu" id="site-menu">
-      <a href="../index.html#hakkimda">HakkÄ±mda</a>
+      <a href="../index.html#hakkimda">Hakkımda</a>
       <a href="../index.html#projeler">Projeler</a>
       <a class="active" href="index.html">Blog</a>
       <a href="../index.html#resume">Resume</a>
-      <a href="../index.html#iletisim">Ä°letiÅŸim</a>
+      <a href="../index.html#iletisim">İletişim</a>
     </nav>
   </header>
 
   <main class="post-layout">
     <header class="post-header">
-      <p class="post-kicker">Ä°ÅŸ Analizi & Veri Bilimi</p>
-      <h1 class="post-title">Ä°ÅŸ Analistleri iÃ§in KPI HiyerarÅŸisi: Veri Bilimi Projelerinde Ã–lÃ§Ã¼m TasarÄ±mÄ±</h1>
+      <p class="post-kicker">İş Analizi & Veri Bilimi</p>
+      <h1 class="post-title">İş Analistleri için KPI Hiyerarşisi: Veri Bilimi Projelerinde Ölçüm Tasarımı</h1>
       <div class="post-info">
-        <span>13 Åubat 2026</span>
+        <span>13 Şubat 2026</span>
         <span>8 dk okuma</span>
         <span>KPI & Analitik</span>
       </div>
-      <img class="post-hero-image" src="../assets/blog/metrik-hiyerarsi.svg" alt="KPI hiyerarÅŸisi gÃ¶rseli" />
+      <img class="post-hero-image" src="../assets/blog/metrik-hiyerarsi.svg" alt="KPI hiyerarşisi görseli" />
     </header>
 
     <article class="post-content">
-      <p>Bir veri bilimi projesinin baÅŸarÄ±sÄ± model doÄŸruluÄŸundan Ã¶nce doÄŸru soruyu Ã¶lÃ§ebilmekten geÃ§er. KPI hiyerarÅŸisi yoksa ekipler farklÄ± metriklere odaklanÄ±r ve ortak karar zemini kaybolur.</p>
+      <p>Bir veri bilimi projesinin başarısı model doğruluğundan önce doğru soruyu ölçebilmekten geçer. KPI hiyerarşisi yoksa ekipler farklı metriklere odaklanır ve ortak karar zemini kaybolur.</p>
+      <img class="post-hero-image" src="../assets/blog/metrik-hiyerarsi.svg" alt="Metrik hiyerarşisi şeması" />
 
       <h2>1. North Star Metrik</h2>
-      <p>Ã–nce Ã¼rÃ¼nÃ¼n ya da sÃ¼recin gerÃ§ek deÄŸerini temsil eden tek bir Ã¼st metrik belirlenir. Bu metrik ekipler arasÄ± ortak yÃ¶n pusulasÄ±dÄ±r.</p>
+      <p>Önce ürünün ya da sürecin gerçek değerini temsil eden tek bir üst metrik belirlenir. Bu metrik ekipler arası ortak yön pusulasıdır.</p>
 
-      <h2>2. Ana KPI KatmanÄ±</h2>
+      <h2>2. Ana KPI Katmanı</h2>
       <ul>
-        <li>North Star'Ä± etkileyen 3-5 ana KPI seÃ§ilir.</li>
-        <li>Her KPI iÃ§in sahip ekip ve gÃ¼ncelleme sÄ±klÄ±ÄŸÄ± tanÄ±mlanÄ±r.</li>
-        <li>FormÃ¼l tanÄ±mÄ± tek dokÃ¼manda standartlaÅŸtÄ±rÄ±lÄ±r.</li>
+        <li>North Star'ı etkileyen 3-5 ana KPI seçilir.</li>
+        <li>Her KPI için sahip ekip ve güncelleme sıklığı tanımlanır.</li>
+        <li>Formül tanımı tek dokümanda standartlaştırılır.</li>
       </ul>
 
-      <h2>3. Alt KPI ve Alarm EÅŸikleri</h2>
-      <p>Alt metrikler operasyon seviyesinde erken uyarÄ± saÄŸlar. EÅŸik deÄŸerleri belirlenmiÅŸ bir sistemde ekipler yalnÄ±zca rapor Ã¼retmez, aksiyon da alÄ±r.</p>
+      <h2>3. Alt KPI ve Alarm Eşikleri</h2>
+      <p>Alt metrikler operasyon seviyesinde erken uyarı sağlar. Eşik değerleri belirlenmiş bir sistemde ekipler yalnızca rapor üretmez, aksiyon da alır.</p>
 
-      <h2>4. Veri Kalitesi ve YÃ¶netiÅŸim</h2>
+      <h2>4. Veri Kalitesi ve Yönetişim</h2>
       <ul>
-        <li>Kaynak sistem eÅŸleÅŸmeleri net olmalÄ±.</li>
-        <li>Eksik veri ve anomali kontrolleri otomatik olmalÄ±.</li>
-        <li>Dashboard versiyonlarÄ± deÄŸiÅŸiklik notlarÄ±yla takip edilmeli.</li>
+        <li>Kaynak sistem eşleşmeleri net olmalı.</li>
+        <li>Eksik veri ve anomali kontrolleri otomatik olmalı.</li>
+        <li>Dashboard versiyonları değişiklik notlarıyla takip edilmeli.</li>
       </ul>
 
       <div class="post-nav">
-        <a href="mobil-navbar-hamburger-ux.html">Ã–nceki: Mobil Navbar UX</a>
+        <a href="mobil-navbar-hamburger-ux.html">Önceki: Mobil Navbar UX</a>
         <a href="cloudflare-pages-ile-yayinlama.html">Sonraki: Cloudflare Pages</a>
       </div>
-      <a class="post-home-link" href="../index.html">Ana sayfaya dÃ¶n</a>
+      <a class="post-home-link" href="../index.html">Ana sayfaya dön</a>
     </article>
   </main>
 
@@ -97,4 +98,3 @@
   <script src="../script.js"></script>
 </body>
 </html>
-

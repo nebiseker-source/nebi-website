@@ -1,20 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Git/GitHub Upstream Nedir? | Nebi Åeker Blog</title>
-  <meta name="description" content="GitHub'da upstream kavramÄ± nedir, origin ile farkÄ± ne ve takÄ±m geliÅŸtirme sÃ¼recinde neden kritik?" />
+  <title>Git/GitHub Upstream Nedir? | Nebi Şeker Blog</title>
+  <meta name="description" content="GitHub'da upstream kavramı nedir, origin ile farkı ne ve takım geliştirme sürecinde neden kritik?" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://nebi-website.pages.dev/blog/git-github-upstream-nedir.html" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Git/GitHub Upstream Nedir?" />
-  <meta property="og:description" content="Origin-upstream iliÅŸkisini doÄŸru kurarak ekip akÄ±ÅŸÄ±nÄ± nasÄ±l sadeleÅŸtirirsin?" />
+  <meta property="og:description" content="Origin-upstream ilişkisini doğru kurarak ekip akışını nasıl sadeleştirirsin?" />
   <meta property="og:url" content="https://nebi-website.pages.dev/blog/git-github-upstream-nedir.html" />
   <meta property="og:image" content="https://nebi-website.pages.dev/assets/blog/git-upstream.svg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Git/GitHub Upstream Nedir?" />
-  <meta name="twitter:description" content="Upstream mantÄ±ÄŸÄ±nÄ± pratik komutlarla sade anlatÄ±m." />
+  <meta name="twitter:description" content="Upstream mantığını pratik komutlarla sade anlatım." />
   <meta name="twitter:image" content="https://nebi-website.pages.dev/assets/blog/git-upstream.svg" />
   <link rel="icon" type="image/png" href="../assets/favicon.png" />
   <link rel="manifest" href="../site.webmanifest" />
@@ -31,41 +31,42 @@
   <header class="topbar">
     <a class="brand" href="../index.html#anasayfa">
       <span class="brand-mark">NS</span>
-      <span class="brand-name">Nebi Åeker</span>
+      <span class="brand-name">Nebi Şeker</span>
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">MenÃ¼</button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menü</button>
     <nav class="menu" id="site-menu">
-      <a href="../index.html#hakkimda">HakkÄ±mda</a>
+      <a href="../index.html#hakkimda">Hakkımda</a>
       <a href="../index.html#projeler">Projeler</a>
       <a class="active" href="index.html">Blog</a>
       <a href="../index.html#resume">Resume</a>
-      <a href="../index.html#iletisim">Ä°letiÅŸim</a>
+      <a href="../index.html#iletisim">İletişim</a>
     </nav>
   </header>
 
   <main class="post-layout">
     <header class="post-header">
       <p class="post-kicker">Git & GitHub</p>
-      <h1 class="post-title">Git/GitHub'da Upstream Nedir ve TakÄ±m AkÄ±ÅŸÄ±nÄ± Neden Korur?</h1>
+      <h1 class="post-title">Git/GitHub'da Upstream Nedir ve Takım Akışını Neden Korur?</h1>
       <div class="post-info">
-        <span>15 Åubat 2026</span>
+        <span>15 Şubat 2026</span>
         <span>6 dk okuma</span>
         <span>Versiyon Kontrol</span>
       </div>
-      <img class="post-hero-image" src="../assets/blog/git-upstream.svg" alt="Git upstream gÃ¶rseli" />
+      <img class="post-hero-image" src="../assets/blog/git-upstream.svg" alt="Git upstream görseli" />
     </header>
 
     <article class="post-content">
-      <p>Fork tabanlÄ± akÄ±ÅŸta en Ã§ok karÄ±ÅŸan konu `origin` ve `upstream` ayrÄ±mÄ±dÄ±r. BasitÃ§e: `origin` senin fork'un, `upstream` ana projenin resmi deposudur. Bu ayrÄ±m net olursa merge Ã§akÄ±ÅŸmalarÄ± ve gereksiz commit trafiÄŸi azalÄ±r.</p>
+      <p>Fork tabanlı akışta en çok karışan konu `origin` ve `upstream` ayrımıdır. Basitçe: `origin` senin fork'un, `upstream` ana projenin resmi deposudur. Bu ayrım net olursa merge çakışmaları ve gereksiz commit trafiği azalır.</p>
+      <img class="post-hero-image" src="../assets/blog/git-upstream.svg" alt="Git branch akışı görseli" />
 
-      <h2>1. Neden Upstream TanÄ±mlanÄ±r?</h2>
+      <h2>1. Neden Upstream Tanımlanır?</h2>
       <ul>
-        <li>Ana depodaki gÃ¼ncellemeleri dÃ¼zenli Ã§ekmek iÃ§in.</li>
-        <li>Forkâ€™unu gÃ¼ncel tutarak PR aÃ§arken farkÄ± kÃ¼Ã§Ã¼ltmek iÃ§in.</li>
-        <li>TakÄ±mda tek bir doÄŸru kaynak noktasÄ± oluÅŸturmak iÃ§in.</li>
+        <li>Ana depodaki güncellemeleri düzenli çekmek için.</li>
+        <li>Fork'unu güncel tutarak PR açarken farkı küçültmek için.</li>
+        <li>Takımda tek bir doğru kaynak noktası oluşturmak için.</li>
       </ul>
 
-      <h2>2. Temel Komut AkÄ±ÅŸÄ±</h2>
+      <h2>2. Temel Komut Akışı</h2>
       <ul>
         <li>`git remote add upstream &lt;ana-repo-url&gt;`</li>
         <li>`git fetch upstream`</li>
@@ -73,14 +74,14 @@
         <li>`git push origin main`</li>
       </ul>
 
-      <h2>3. Ä°ÅŸ Analizi ve Veri Projelerinde Etkisi</h2>
-      <p>Raporlama veya modelleme projelerinde branch dÃ¼zeni bozulursa, hangi metrik hangi koddaki deÄŸiÅŸimden etkilenmiÅŸ takip etmek zorlaÅŸÄ±r. Upstream disiplini, karar destek Ã§Ä±ktÄ±larÄ±nÄ±n izlenebilirliÄŸini artÄ±rÄ±r.</p>
+      <h2>3. İş Analizi ve Veri Projelerinde Etkisi</h2>
+      <p>Raporlama veya modelleme projelerinde branch düzeni bozulursa, hangi metrik hangi koddaki değişimden etkilenmiş takip etmek zorlaşır. Upstream disiplini, karar destek çıktılarının izlenebilirliğini artırır.</p>
 
       <div class="post-nav">
-        <a href="cloudflare-pages-ile-yayinlama.html">Ã–nceki: Cloudflare Pages</a>
+        <a href="cloudflare-pages-ile-yayinlama.html">Önceki: Cloudflare Pages</a>
         <a href="mobil-navbar-hamburger-ux.html">Sonraki: Mobil Navbar UX</a>
       </div>
-      <a class="post-home-link" href="../index.html">Ana sayfaya dÃ¶n</a>
+      <a class="post-home-link" href="../index.html">Ana sayfaya dön</a>
     </article>
   </main>
 
@@ -95,4 +96,3 @@
   <script src="../script.js"></script>
 </body>
 </html>
-

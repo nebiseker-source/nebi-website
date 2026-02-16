@@ -1,0 +1,28 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C222B"/>
+      <stop offset="1" stop-color="#10141A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="130" x2="1020" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D6B273"/>
+      <stop offset="1" stop-color="#E2BF82"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1030" cy="120" r="210" fill="#D6B273" fill-opacity="0.12"/>
+  <rect x="140" y="120" width="920" height="390" rx="22" fill="#151A21" stroke="#2A313C" stroke-width="2"/>
+  <rect x="180" y="165" width="840" height="50" rx="10" fill="#0F1319" stroke="#2B3340"/>
+  <circle cx="210" cy="190" r="7" fill="#D6B273"/>
+  <circle cx="232" cy="190" r="7" fill="#3E4656"/>
+  <circle cx="254" cy="190" r="7" fill="#3E4656"/>
+  <rect x="180" y="245" width="420" height="22" rx="8" fill="#2A3240"/>
+  <rect x="180" y="280" width="320" height="18" rx="7" fill="#232B37"/>
+  <rect x="180" y="315" width="360" height="18" rx="7" fill="#232B37"/>
+  <path d="M650 408C742 285 784 325 866 244C907 203 959 203 1020 178" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="650" cy="408" r="8" fill="#D6B273"/>
+  <circle cx="866" cy="244" r="8" fill="#D6B273"/>
+  <circle cx="1020" cy="178" r="8" fill="#D6B273"/>
+  <text x="180" y="420" fill="#F3EFE7" font-family="Manrope, Arial, sans-serif" font-size="56" font-weight="700">Cloudflare Pages</text>
+  <text x="180" y="462" fill="#C9C1B4" font-family="Manrope, Arial, sans-serif" font-size="27">Deploy ve terminal akışı</text>
+</svg>

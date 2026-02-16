@@ -455,6 +455,16 @@ p:last-child {
   margin-top: var(--space-4);
 }
 
+.dashboard-embed {
+  width: 100%;
+  height: 650px;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
 .btn-disabled,
 .btn:disabled {
   opacity: 0.62;
@@ -1013,6 +1023,10 @@ button:focus-visible,
 
   .blog-cover {
     margin: 22px auto;
+  }
+
+  .dashboard-embed {
+    height: 520px;
   }
 
   .panel {

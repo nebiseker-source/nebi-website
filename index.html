@@ -4,11 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#101214" />
-  <title>Nebi Şeker | Kişisel Web Sitesi</title>
+  <title>Nebi Şeker | Full-Stack Developer</title>
   <meta
     name="description"
-    content="Nebi Şeker'in kişisel web sitesi: hakkımda, yetkinlikler, projeler ve iletişim."
+    content="Nebi Şeker'in portfolyosu: full-stack web geliştirme, öne çıkan projeler, yetkinlikler ve iletişim."
   />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nebi-website.pages.dev/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Nebi Şeker Portfolio" />
+  <meta property="og:title" content="Nebi Şeker | Full-Stack Developer" />
+  <meta
+    property="og:description"
+    content="Hızlı, ölçeklenebilir ve kullanıcı odaklı web ürünleri geliştiren full-stack geliştirici."
+  />
+  <meta property="og:url" content="https://nebi-website.pages.dev/" />
+  <meta property="og:image" content="https://nebi-website.pages.dev/assets/og.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nebi Şeker | Full-Stack Developer" />
+  <meta
+    name="twitter:description"
+    content="Projelerim, yetkinliklerim ve iletişim bilgilerim."
+  />
+  <meta name="twitter:image" content="https://nebi-website.pages.dev/assets/og.png" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="manifest" href="site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -32,6 +56,7 @@
     <nav class="menu" id="site-menu">
       <a href="#hakkimda">Hakkımda</a>
       <a href="#projeler">Projeler</a>
+      <a href="#resume">Resume</a>
       <a href="#iletisim">İletişim</a>
     </nav>
   </header>
@@ -41,10 +66,11 @@
       <p class="kicker">Kişisel Portfolyo</p>
       <h1>Nebi Şeker</h1>
       <p class="subtitle">
-        Full-stack geliştirici olarak hızlı, ölçeklenebilir ve dönüşüm odaklı web ürünleri geliştiriyorum.
+        Obilet'te operasyon ve entegrasyon süreçlerini yöneten; veri analizi ve web geliştirme ile verimlilik odaklı çözümler üreten bir profesyonelim.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projeler">Projelerimi İncele</a>
+        <a class="btn btn-ghost" href="assets/Nebi-Seker-CV.pdf" target="_blank" rel="noreferrer">CV İndir</a>
         <a class="btn btn-ghost" href="#iletisim">Proje Konuşalım</a>
       </div>
     </section>
@@ -52,53 +78,143 @@
     <section id="hakkimda" class="panel reveal">
       <h2>Hakkımda</h2>
       <p>
-        Merhaba, ben Nebi. Yazılım, tasarım ve ürün geliştirme alanlarında sade,
-        etkili ve ölçeklendirilebilir çözümler üretmeyi hedefliyorum.
+        Operasyon, entegrasyon ve raporlama süreçlerinde 5+ yıllık deneyimimle; teknik analiz, süreç iyileştirme ve dijital ürün geliştirme alanlarında çalışıyorum.
       </p>
-      <p>
-        Odak alanlarım: web uygulamaları, kullanıcı deneyimi ve performans.
-      </p>
+      <ul class="skills-list">
+        <li>Operasyon Yönetimi</li>
+        <li>API Entegrasyonu</li>
+        <li>Veri Analizi (Excel / Power BI)</li>
+        <li>Süreç Optimizasyonu</li>
+        <li>Frontend Development</li>
+      </ul>
     </section>
 
     <section id="projeler" class="panel reveal">
       <h2>Öne Çıkan Projeler</h2>
       <div class="cards">
         <article class="card">
-          <h3>Proje 01</h3>
-          <p>Gerçek dünya ihtiyacına odaklanan modern bir web uygulaması.</p>
-          <p class="tech-stack"><strong>Kullanılan teknoloji:</strong> React, Node.js, PostgreSQL</p>
-          <span class="card-tag">Web Uygulaması</span>
+          <div class="card-media" aria-hidden="true"></div>
+          <h3>Nebi Website</h3>
+          <p class="case-line"><strong>Problem:</strong> Kişisel marka ve projeleri tek bir net vitrinde sunma ihtiyacı.</p>
+          <p class="case-line"><strong>Çözüm:</strong> Premium UI dili, mobil uyumlu navigasyon ve SEO odaklı portfolyo mimarisi.</p>
+          <p class="case-line"><strong>Sonuç:</strong> Daha güçlü ilk izlenim, paylaşılabilir yapı ve hızlı içerik güncelleme.</p>
+          <div class="badge-list">
+            <span class="card-tag">HTML</span>
+            <span class="card-tag">CSS</span>
+            <span class="card-tag">JavaScript</span>
+            <span class="card-tag">SEO</span>
+          </div>
           <div class="project-actions">
-            <a class="btn btn-primary btn-sm" href="https://example.com/demo-proje-01" target="_blank" rel="noreferrer">Canlı Demo</a>
-            <a class="btn btn-ghost btn-sm" href="https://example.com/kod-proje-01" target="_blank" rel="noreferrer">Kod</a>
+            <a class="btn btn-primary btn-sm" href="https://nebi-website.pages.dev/" target="_blank" rel="noreferrer">Demo</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/nebiseker-source/nebi-website" target="_blank" rel="noreferrer">Kod</a>
           </div>
         </article>
         <article class="card">
-          <h3>Proje 02</h3>
-          <p>Kullanıcı deneyimi ve hız odaklı, mobil uyumlu bir arayüz çalışması.</p>
-          <p class="tech-stack"><strong>Kullanılan teknoloji:</strong> Next.js, TypeScript, Tailwind CSS</p>
-          <span class="card-tag">UX / Frontend</span>
+          <div class="card-media" aria-hidden="true"></div>
+          <h3>Anonim Proje A | Havayolu Talep Tahmini</h3>
+          <p class="case-line"><strong>Problem:</strong> Uçuş bazlı talep dalgalanmaları nedeniyle fiyatlama ve kapasite planlamasında öngörü hataları oluşuyordu.</p>
+          <p class="case-line"><strong>Çözüm:</strong> Tarihsel satış, sezon etkisi ve operasyonel verileri birleştiren tahminleme modeli ve karar destek ekranı geliştirildi.</p>
+          <p class="case-line"><strong>Sonuç:</strong> Planlama kararlarında öngörülebilirlik arttı, operasyon ekiplerinin aksiyon alma süresi kısaldı.</p>
+          <div class="badge-list">
+            <span class="card-tag">Python</span>
+            <span class="card-tag">Time Series</span>
+            <span class="card-tag">Power BI</span>
+            <span class="card-tag">Forecasting</span>
+          </div>
           <div class="project-actions">
-            <a class="btn btn-primary btn-sm" href="https://example.com/demo-proje-02" target="_blank" rel="noreferrer">Canlı Demo</a>
-            <a class="btn btn-ghost btn-sm" href="https://example.com/kod-proje-02" target="_blank" rel="noreferrer">Kod</a>
+            <a class="btn btn-primary btn-sm" href="https://example.com/anon-proje-a-demo" target="_blank" rel="noreferrer">Demo</a>
+            <a class="btn btn-ghost btn-sm" href="https://example.com/anon-proje-a-kod" target="_blank" rel="noreferrer">Kod</a>
           </div>
         </article>
         <article class="card">
-          <h3>Proje 03</h3>
-          <p>Veri görselleştirme ve karar destek süreçlerini kolaylaştıran araç.</p>
-          <p class="tech-stack"><strong>Kullanılan teknoloji:</strong> Vue, D3.js, Firebase</p>
-          <span class="card-tag">Data Viz</span>
+          <div class="card-media" aria-hidden="true"></div>
+          <h3>Anonim Proje B | İptal/Değişim Risk Analizi</h3>
+          <p class="case-line"><strong>Problem:</strong> Bilet iptal ve değişim süreçlerinde belirsizlik kaynaklı finansal ve operasyonel risk artışı yaşanıyordu.</p>
+          <p class="case-line"><strong>Çözüm:</strong> Bulanık modelleme yöntemleriyle risk faktörlerini ağırlıklandıran ve senaryo bazlı karar desteği sağlayan yapı tasarlandı.</p>
+          <p class="case-line"><strong>Sonuç:</strong> Riskli işlemler daha erken tespit edildi, manuel değerlendirme yükü azaldı ve karar kalitesi iyileşti.</p>
+          <div class="badge-list">
+            <span class="card-tag">Fuzzy Logic</span>
+            <span class="card-tag">Risk Analysis</span>
+            <span class="card-tag">Excel VBA</span>
+            <span class="card-tag">Power BI</span>
+          </div>
           <div class="project-actions">
-            <a class="btn btn-primary btn-sm" href="https://example.com/demo-proje-03" target="_blank" rel="noreferrer">Canlı Demo</a>
-            <a class="btn btn-ghost btn-sm" href="https://example.com/kod-proje-03" target="_blank" rel="noreferrer">Kod</a>
+            <a class="btn btn-primary btn-sm" href="https://example.com/anon-proje-b-demo" target="_blank" rel="noreferrer">Demo</a>
+            <a class="btn btn-ghost btn-sm" href="https://example.com/anon-proje-b-kod" target="_blank" rel="noreferrer">Kod</a>
           </div>
         </article>
       </div>
     </section>
 
+    <section id="resume" class="panel reveal">
+      <h2>Resume</h2>
+      <p>İş deneyimi ve eğitim geçmişimden öne çıkan başlıklar:</p>
+      <div class="resume-grid">
+        <article class="resume-block">
+          <h3>Deneyim</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4>Sr. Agency/Flight Operation Specialist</h4>
+              <p class="meta">obilet.com | Tem 2023 - Devam ediyor | İstanbul (Hibrit)</p>
+              <ul>
+                <li>Uçak ve acente operasyon süreçlerinde sistem kurulum, analiz ve optimizasyon yönettim.</li>
+                <li>API entegrasyon süreçlerini uçtan uca koordine ederek güvenli veri akışı sağladım.</li>
+                <li>Excel (PivotTable, Power Query, VBA) ve Power BI ile aylık 20+ rapor hazırlayıp manuel işi %60 azalttım.</li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <h4>Agency/Flight Operation Specialist</h4>
+              <p class="meta">obilet.com | Oca 2022 - Tem 2023 | İstanbul (Hibrit)</p>
+              <ul>
+                <li>Acente süreçlerinin koordinasyonu, ödeme raporlama ve finansal takip operasyonlarını yönettim.</li>
+                <li>Süreç iyileştirme ve yeni ekip üyelerinin onboarding/eğitim süreçlerinde aktif rol aldım.</li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <h4>Corporate IMS Support Specialist</h4>
+              <p class="meta">obilet.com | Eki 2021 - Ara 2021 | İstanbul (Hibrit)</p>
+            </div>
+            <div class="timeline-item">
+              <h4>Corporate IMS Support Specialist Assistant</h4>
+              <p class="meta">obilet.com | Ara 2020 - Eki 2021 | İstanbul</p>
+            </div>
+            <div class="timeline-item">
+              <h4>Veri Uzmanı</h4>
+              <p class="meta">INTERPRESS Medya Takip Ajansı | Tem 2019 - Mar 2020 | İstanbul</p>
+              <ul>
+                <li>Marka görünürlüğü ve medya takibi analizleri yaparak düzenli raporlar ürettim.</li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <h4>Risk Uzmanı</h4>
+              <p class="meta">Dünya Varlık Yönetim A.Ş. | Eyl 2017 - Oca 2019</p>
+            </div>
+          </div>
+        </article>
+        <article class="resume-block">
+          <h3>Eğitim</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4>Yıldız Teknik Üniversitesi</h4>
+              <p class="meta">Yüksek Lisans, Endüstri Mühendisliği | Eyl 2025 - Devam ediyor</p>
+            </div>
+            <div class="timeline-item">
+              <h4>Atatürk Üniversitesi</h4>
+              <p class="meta">Önlisans, Bilgisayar Programcılığı | Eyl 2020 - Haz 2022</p>
+            </div>
+            <div class="timeline-item">
+              <h4>İstanbul Üniversitesi</h4>
+              <p class="meta">Lisans, Sinema | Eyl 2014 - Haz 2018</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <a class="btn btn-primary" href="assets/Nebi-Seker-CV.pdf" target="_blank" rel="noreferrer">CV İndir (PDF)</a>
+    </section>
+
     <section id="iletisim" class="panel reveal">
       <h2>İletişim</h2>
-      <p>Birlikte çalışmak istersen bana ulaşabilirsin.</p>
+      <p>Yeni bir ürün, ekip veya freelance proje için iletişime geçebilirsin.</p>
       <div class="contact-grid">
         <a href="mailto:nebiseker@gmail.com">nebiseker@gmail.com</a>
         <a href="https://www.linkedin.com/in/nebiseker/" target="_blank" rel="noreferrer">LinkedIn</a>

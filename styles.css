@@ -736,6 +736,21 @@ footer {
   color: var(--muted);
 }
 
+.footer-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.footer-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.82rem;
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
 a:focus-visible,
 button:focus-visible,
 .btn:focus-visible {

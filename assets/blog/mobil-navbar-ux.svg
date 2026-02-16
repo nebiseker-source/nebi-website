@@ -1,0 +1,18 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D2430"/>
+      <stop offset="1" stop-color="#0F1319"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect x="220" y="80" width="280" height="470" rx="28" fill="#0E1217" stroke="#3B3124"/>
+  <rect x="260" y="130" width="200" height="26" rx="8" fill="#D6B273" fill-opacity="0.4"/>
+  <rect x="260" y="180" width="200" height="18" rx="6" fill="#F5F2EB" fill-opacity="0.2"/>
+  <rect x="260" y="214" width="160" height="18" rx="6" fill="#F5F2EB" fill-opacity="0.2"/>
+  <rect x="700" y="140" width="260" height="310" rx="16" fill="#161B22" stroke="#2D3643"/>
+  <rect x="730" y="180" width="200" height="18" rx="6" fill="#D6B273" fill-opacity="0.45"/>
+  <rect x="730" y="214" width="200" height="18" rx="6" fill="#F5F2EB" fill-opacity="0.18"/>
+  <rect x="730" y="248" width="200" height="18" rx="6" fill="#F5F2EB" fill-opacity="0.18"/>
+  <text x="580" y="540" text-anchor="middle" fill="#F5F2EB" font-family="Manrope, Arial, sans-serif" font-size="46" font-weight="700">Mobil Navbar UX</text>
+</svg>

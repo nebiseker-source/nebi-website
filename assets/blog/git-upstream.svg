@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F2630"/>
+      <stop offset="1" stop-color="#0E1217"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect x="110" y="110" width="980" height="410" rx="18" fill="#161B22" stroke="#2C3440"/>
+  <path d="M210 420C310 300 430 340 520 270C630 184 770 240 870 160" stroke="#D6B273" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="210" cy="420" r="10" fill="#D6B273"/>
+  <circle cx="520" cy="270" r="10" fill="#D6B273"/>
+  <circle cx="870" cy="160" r="10" fill="#D6B273"/>
+  <text x="160" y="250" fill="#F5F2EB" font-family="Manrope, Arial, sans-serif" font-size="54" font-weight="700">Git Upstream</text>
+  <text x="160" y="320" fill="#CBBEA5" font-family="Manrope, Arial, sans-serif" font-size="32">Takım akışını bozmadan branch yönetimi</text>
+</svg>

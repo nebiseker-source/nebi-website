@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nebi Şeker Blog</title>
+    <link>https://nebi-website.pages.dev/blog/</link>
+    <description>İş analizi, veri bilimi ve ürün geliştirme odaklı yazılar.</description>
+    <language>tr-TR</language>
+    <lastBuildDate>Mon, 16 Feb 2026 12:00:00 GMT</lastBuildDate>
+    <atom:link href="https://nebi-website.pages.dev/rss.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Cloudflare Pages ile Yayınlama: Teknik ve Analitik Kontrol Listesi</title>
+      <link>https://nebi-website.pages.dev/blog/cloudflare-pages-ile-yayinlama.html</link>
+      <guid>https://nebi-website.pages.dev/blog/cloudflare-pages-ile-yayinlama.html</guid>
+      <pubDate>Mon, 16 Feb 2026 09:00:00 GMT</pubDate>
+      <description>Statik site yayınında deploy, SEO ve ölçümleme için temel adımlar.</description>
+    </item>
+
+    <item>
+      <title>Git/GitHub'da Upstream Nedir ve Takım Akışını Neden Korur?</title>
+      <link>https://nebi-website.pages.dev/blog/git-github-upstream-nedir.html</link>
+      <guid>https://nebi-website.pages.dev/blog/git-github-upstream-nedir.html</guid>
+      <pubDate>Sun, 15 Feb 2026 10:00:00 GMT</pubDate>
+      <description>Origin-upstream ilişkisini doğru kurmanın pratik etkileri.</description>
+    </item>
+
+    <item>
+      <title>Mobil Navbar ve Hamburger UX: Dönüşümü Etkileyen 8 Kural</title>
+      <link>https://nebi-website.pages.dev/blog/mobil-navbar-hamburger-ux.html</link>
+      <guid>https://nebi-website.pages.dev/blog/mobil-navbar-hamburger-ux.html</guid>
+      <pubDate>Sat, 14 Feb 2026 10:00:00 GMT</pubDate>
+      <description>Mobil menü tasarımında erişilebilirlik ve hız odaklı temel UX prensipleri.</description>
+    </item>
+
+    <item>
+      <title>İş Analistleri için KPI Hiyerarşisi: Veri Bilimi Projelerinde Ölçüm Tasarımı</title>
+      <link>https://nebi-website.pages.dev/blog/is-analistleri-icin-kpi-hiyerarsisi.html</link>
+      <guid>https://nebi-website.pages.dev/blog/is-analistleri-icin-kpi-hiyerarsisi.html</guid>
+      <pubDate>Fri, 13 Feb 2026 10:00:00 GMT</pubDate>
+      <description>North Star, ana KPI ve alt KPI katmanlarıyla metrik mimarisi kurma rehberi.</description>
+    </item>
+  </channel>
+</rss>

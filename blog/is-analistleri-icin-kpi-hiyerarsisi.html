@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İş Analistleri için KPI Hiyerarşisi | Nebi Şeker Blog</title>
+  <meta name="description" content="Veri bilimi projelerinde North Star metrikten alt KPI setine kadar ölçüm hiyerarşisi nasıl kurulur?" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nebi-website.pages.dev/blog/is-analistleri-icin-kpi-hiyerarsisi.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="İş Analistleri için KPI Hiyerarşisi" />
+  <meta property="og:description" content="Ürün ve operasyon ekipleri için ölçülebilir metrik mimarisi." />
+  <meta property="og:url" content="https://nebi-website.pages.dev/blog/is-analistleri-icin-kpi-hiyerarsisi.html" />
+  <meta property="og:image" content="https://nebi-website.pages.dev/assets/blog/metrik-hiyerarsi.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="İş Analistleri için KPI Hiyerarşisi" />
+  <meta name="twitter:description" content="North Star, ana KPI ve alt KPI tasarım rehberi." />
+  <meta name="twitter:image" content="https://nebi-website.pages.dev/assets/blog/metrik-hiyerarsi.svg" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-a"></div>
+  <div class="bg-shape bg-shape-b"></div>
+
+  <header class="topbar">
+    <a class="brand" href="../index.html#anasayfa">
+      <span class="brand-mark">NS</span>
+      <span class="brand-name">Nebi Şeker</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menü</button>
+    <nav class="menu" id="site-menu">
+      <a href="../index.html#hakkimda">Hakkımda</a>
+      <a href="../index.html#projeler">Projeler</a>
+      <a class="active" href="index.html">Blog</a>
+      <a href="../index.html#resume">Resume</a>
+      <a href="../index.html#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <main class="post-layout">
+    <header class="post-header">
+      <p class="post-kicker">İş Analizi & Veri Bilimi</p>
+      <h1 class="post-title">İş Analistleri için KPI Hiyerarşisi: Veri Bilimi Projelerinde Ölçüm Tasarımı</h1>
+      <div class="post-info">
+        <span>13 Şubat 2026</span>
+        <span>8 dk okuma</span>
+        <span>KPI & Analitik</span>
+      </div>
+      <img class="post-hero-image" src="../assets/blog/metrik-hiyerarsi.svg" alt="KPI hiyerarşisi görseli" />
+    </header>
+
+    <article class="post-content">
+      <p>Bir veri bilimi projesinin başarısı model doğruluğundan önce doğru soruyu ölçebilmekten geçer. KPI hiyerarşisi yoksa ekipler farklı metriklere odaklanır ve ortak karar zemini kaybolur.</p>
+
+      <h2>1. North Star Metrik</h2>
+      <p>Önce ürünün ya da sürecin gerçek değerini temsil eden tek bir üst metrik belirlenir. Bu metrik ekipler arası ortak yön pusulasıdır.</p>
+
+      <h2>2. Ana KPI Katmanı</h2>
+      <ul>
+        <li>North Star'ı etkileyen 3-5 ana KPI seçilir.</li>
+        <li>Her KPI için sahip ekip ve güncelleme sıklığı tanımlanır.</li>
+        <li>Formül tanımı tek dokümanda standartlaştırılır.</li>
+      </ul>
+
+      <h2>3. Alt KPI ve Alarm Eşikleri</h2>
+      <p>Alt metrikler operasyon seviyesinde erken uyarı sağlar. Eşik değerleri belirlenmiş bir sistemde ekipler yalnızca rapor üretmez, aksiyon da alır.</p>
+
+      <h2>4. Veri Kalitesi ve Yönetişim</h2>
+      <ul>
+        <li>Kaynak sistem eşleşmeleri net olmalı.</li>
+        <li>Eksik veri ve anomali kontrolleri otomatik olmalı.</li>
+        <li>Dashboard versiyonları değişiklik notlarıyla takip edilmeli.</li>
+      </ul>
+
+      <div class="post-nav">
+        <a href="mobil-navbar-hamburger-ux.html">Önceki: Mobil Navbar UX</a>
+        <a href="cloudflare-pages-ile-yayinlama.html">Sonraki: Cloudflare Pages</a>
+      </div>
+      <a class="post-home-link" href="../index.html">Ana sayfaya dön</a>
+    </article>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nebi Şeker</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

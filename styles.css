@@ -159,6 +159,11 @@ section[id] {
   background: rgba(245, 242, 235, 0.04);
 }
 
+.menu a.active {
+  color: var(--accent-strong);
+  background: rgba(245, 242, 235, 0.06);
+}
+
 main {
   width: min(1080px, 92vw);
   margin: 0 auto;
@@ -547,6 +552,183 @@ p:last-child {
   font-weight: 700;
 }
 
+.blog-main {
+  width: min(1080px, 92vw);
+  margin: 0 auto;
+  padding: var(--space-10) 0 var(--space-12);
+}
+
+.blog-hero {
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(var(--space-6), 4vw, var(--space-10));
+  margin-bottom: var(--space-6);
+}
+
+.blog-hero p {
+  color: var(--muted);
+  max-width: 65ch;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.post-card {
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-card);
+  background: linear-gradient(165deg, rgba(250, 246, 238, 0.03), rgba(22, 25, 30, 0.74));
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(214, 178, 115, 0.46);
+}
+
+.post-cover {
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(240, 234, 224, 0.2);
+  margin-bottom: var(--space-4);
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: var(--space-3);
+}
+
+.post-meta span {
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+}
+
+.post-card h3 {
+  margin: 0 0 var(--space-3);
+}
+
+.post-card p {
+  color: var(--muted);
+  margin-bottom: var(--space-4);
+}
+
+.post-link {
+  color: var(--accent-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.post-layout {
+  width: min(900px, 92vw);
+  margin: 0 auto;
+  padding: var(--space-10) 0 var(--space-12);
+}
+
+.post-header {
+  margin-bottom: var(--space-6);
+}
+
+.post-kicker {
+  margin: 0 0 var(--space-3);
+  color: var(--accent);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.post-title {
+  margin: 0 0 var(--space-4);
+}
+
+.post-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.post-info span {
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+}
+
+.post-hero-image {
+  width: 100%;
+  max-height: 360px;
+  border-radius: 16px;
+  border: 1px solid var(--stroke);
+  object-fit: cover;
+  margin: var(--space-5) 0 var(--space-6);
+}
+
+.post-content {
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(var(--space-6), 4vw, var(--space-10));
+}
+
+.post-content h2 {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+}
+
+.post-content ul {
+  margin: 0 0 var(--space-4);
+  padding-left: 20px;
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+}
+
+.post-content li {
+  line-height: 1.65;
+}
+
+.post-nav {
+  margin-top: var(--space-6);
+  border-top: 1px solid var(--stroke);
+  padding-top: var(--space-5);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.post-nav a {
+  display: block;
+  border: 1px solid var(--stroke);
+  border-radius: 12px;
+  padding: 12px;
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(245, 242, 235, 0.02);
+}
+
+.post-home-link {
+  display: inline-block;
+  margin-top: var(--space-5);
+  color: var(--accent-strong);
+  text-decoration: none;
+  font-weight: 700;
+}
+
 footer {
   width: min(1080px, 92vw);
   margin: 0 auto;
@@ -575,6 +757,10 @@ button:focus-visible,
 @media (max-width: 980px) {
   .cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
   }
 
   .project-lanes {
@@ -635,6 +821,10 @@ button:focus-visible,
 
 @media (max-width: 640px) {
   .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .post-nav {
     grid-template-columns: 1fr;
   }
 

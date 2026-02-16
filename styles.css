@@ -44,6 +44,19 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.cursor-glow {
+  position: fixed;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(214, 178, 115, 0.2) 0%, rgba(214, 178, 115, 0) 68%);
+  pointer-events: none;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.24s ease;
+}
+
 section[id] {
   scroll-margin-top: 110px;
 }
@@ -53,6 +66,7 @@ section[id] {
   z-index: -1;
   opacity: 0.2;
   pointer-events: none;
+  animation: floatBlob 12s ease-in-out infinite;
 }
 
 .bg-shape-a {
@@ -157,6 +171,20 @@ main {
   align-content: center;
   gap: var(--space-5);
   padding-bottom: var(--space-10);
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -10% -28% auto;
+  width: min(560px, 70vw);
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(214, 178, 115, 0.2), rgba(214, 178, 115, 0));
+  filter: blur(8px);
+  z-index: -1;
+  animation: pulseAura 7s ease-in-out infinite;
 }
 
 .kicker {
@@ -343,6 +371,62 @@ p:last-child {
   font-size: 0.86rem;
 }
 
+.hero-metrics {
+  margin-top: var(--space-6);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  max-width: 620px;
+}
+
+.metric-card,
+.metric-chart {
+  border: 1px solid var(--stroke);
+  border-radius: 14px;
+  background: linear-gradient(155deg, rgba(245, 242, 235, 0.07), rgba(245, 242, 235, 0.02));
+  padding: 14px;
+  backdrop-filter: blur(3px);
+}
+
+.metric-card {
+  display: grid;
+  gap: 6px;
+}
+
+.metric-label {
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.metric-card strong {
+  font-size: 1.55rem;
+  color: var(--accent-strong);
+  line-height: 1;
+}
+
+.metric-chart {
+  grid-column: 1 / -1;
+}
+
+.metric-chart svg {
+  display: block;
+  width: 100%;
+  height: 96px;
+}
+
+.metric-chart polyline {
+  fill: none;
+  stroke: var(--accent-strong);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 540;
+  stroke-dashoffset: 540;
+  animation: drawLine 2.4s ease forwards 0.3s;
+}
+
 .resume-grid {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
@@ -437,6 +521,10 @@ button:focus-visible,
   .resume-grid {
     grid-template-columns: 1fr;
   }
+
+  .hero-metrics {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -499,6 +587,14 @@ button:focus-visible,
   .card-media {
     height: 96px;
   }
+
+  .hero-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-chart {
+    grid-column: auto;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -517,5 +613,33 @@ button:focus-visible,
   .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+@keyframes floatBlob {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-10px) translateX(6px);
+  }
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulseAura {
+  0%,
+  100% {
+    opacity: 0.38;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.62;
+    transform: scale(1.06);
   }
 }

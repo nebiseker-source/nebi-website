@@ -196,6 +196,22 @@ main {
   font-weight: 700;
 }
 
+.hero-identity {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.avatar {
+  width: clamp(68px, 10vw, 96px);
+  height: clamp(68px, 10vw, 96px);
+  border-radius: 50%;
+  border: 2px solid rgba(214, 178, 115, 0.45);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
 h1 {
   margin: 0;
   max-width: 14ch;
@@ -586,6 +602,10 @@ button:focus-visible,
 
   .card-media {
     height: 96px;
+  }
+
+  .hero-identity {
+    gap: var(--space-3);
   }
 
   .hero-metrics {

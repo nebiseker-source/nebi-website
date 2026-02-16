@@ -1,20 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cloudflare Pages ile YayÄ±nlama | Nebi Åeker Blog</title>
-  <meta name="description" content="Cloudflare Pages Ã¼zerinde statik site yayÄ±nlarken SEO, performans ve Ã¶lÃ§Ã¼mleme iÃ§in pratik kontrol listesi." />
+  <title>Cloudflare Pages ile Yayınlama | Nebi Şeker Blog</title>
+  <meta name="description" content="Cloudflare Pages üzerinde statik site yayınlarken SEO, performans ve ölçümleme için pratik kontrol listesi." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://nebi-website.pages.dev/blog/cloudflare-pages-ile-yayinlama.html" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Cloudflare Pages ile YayÄ±nlama" />
-  <meta property="og:description" content="Statik site yayÄ±nÄ±nda deploy, SEO ve Ã¶lÃ§Ã¼mleme adÄ±mlarÄ±." />
+  <meta property="og:title" content="Cloudflare Pages ile Yayınlama" />
+  <meta property="og:description" content="Statik site yayınında deploy, SEO ve ölçümleme adımları." />
   <meta property="og:url" content="https://nebi-website.pages.dev/blog/cloudflare-pages-ile-yayinlama.html" />
   <meta property="og:image" content="https://nebi-website.pages.dev/assets/images/blog/cloudflare-pages.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Cloudflare Pages ile YayÄ±nlama" />
-  <meta name="twitter:description" content="Deploy, SEO ve performans odaklÄ± pratik rehber." />
+  <meta name="twitter:title" content="Cloudflare Pages ile Yayınlama" />
+  <meta name="twitter:description" content="Deploy, SEO ve performans odaklı pratik rehber." />
   <meta name="twitter:image" content="https://nebi-website.pages.dev/assets/images/blog/cloudflare-pages.svg" />
   <link rel="icon" type="image/png" href="../assets/favicon.png" />
   <link rel="manifest" href="../site.webmanifest" />
@@ -31,24 +31,24 @@
   <header class="topbar">
     <a class="brand" href="../index.html#anasayfa">
       <span class="brand-mark">NS</span>
-      <span class="brand-name">Nebi Åeker</span>
+      <span class="brand-name">Nebi Şeker</span>
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">MenÃ¼</button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menü</button>
     <nav class="menu" id="site-menu">
-      <a href="../index.html#hakkimda">HakkÄ±mda</a>
+      <a href="../index.html#hakkimda">Hakkımda</a>
       <a href="../index.html#projeler">Projeler</a>
       <a class="active" href="index.html">Blog</a>
       <a href="../index.html#resume">Resume</a>
-      <a href="../index.html#iletisim">Ä°letiÅŸim</a>
+      <a href="../index.html#iletisim">İletişim</a>
     </nav>
   </header>
 
   <main class="post-layout">
     <header class="post-header">
       <p class="post-kicker">Cloudflare</p>
-      <h1 class="post-title">Cloudflare Pages ile YayÄ±nlama: Teknik ve Analitik Kontrol Listesi</h1>
+      <h1 class="post-title">Cloudflare Pages ile Yayınlama: Teknik ve Analitik Kontrol Listesi</h1>
       <div class="post-info">
-        <span>16 Åubat 2026</span>
+        <span>16 Şubat 2026</span>
         <span>7 dk okuma</span>
         <span>Deploy & SEO</span>
       </div>
@@ -56,39 +56,39 @@
     </header>
 
     <article class="post-content">
-      <p>Statik bir kiÅŸisel siteyi yayÄ±na almak kolay gÃ¶rÃ¼nebilir; asÄ±l farkÄ±, yayÄ±ndan sonra Ã¶lÃ§ebildiÄŸin ve iyileÅŸtirebildiÄŸin yapÄ± yaratÄ±r. Cloudflare Pages bu noktada hÄ±zlÄ± bir baÅŸlangÄ±Ã§ saÄŸlar ama doÄŸru sonuÃ§ iÃ§in birkaÃ§ temel kontrol ÅŸarttÄ±r.</p>
-      <img class="blog-cover" src="/assets/images/blog/cloudflare-pages.svg" alt="Cloudflare Pages ile yayınlama">
+      <p>Statik bir kişisel siteyi yayına almak kolay görünebilir; asıl farkı, yayından sonra ölçebildiğin ve iyileştirebildiğin yapı yaratır. Cloudflare Pages bu noktada hızlı bir başlangıç sağlar ama doğru sonuç için birkaç temel kontrol şarttır.</p>
+      <img class="post-hero-image" src="/assets/images/blog/cloudflare-pages.svg" alt="Cloudflare Pages yayın akışı görseli" />
 
-      <h2>1. Deploy AkÄ±ÅŸÄ±nÄ± BasitleÅŸtir</h2>
+      <h2>1. Deploy Akışını Basitleştir</h2>
       <ul>
         <li>Tek bir ana branch belirle (`main`).</li>
-        <li>Her gÃ¼ncellemede otomatik deploy tetiklenmesini aÃ§.</li>
-        <li>Commit mesajlarÄ±nÄ± anlamlÄ± tut; geri izleme kolaylaÅŸÄ±r.</li>
+        <li>Her güncellemede otomatik deploy tetiklenmesini aç.</li>
+        <li>Commit mesajlarını anlamlı tut; geri izleme kolaylaşır.</li>
       </ul>
 
-      <h2>2. SEO Temellerini YayÄ±ndan Ã–nce Bitir</h2>
+      <h2>2. SEO Temellerini Yayından Önce Bitir</h2>
       <ul>
         <li>Her sayfada benzersiz `title` ve `meta description` kullan.</li>
-        <li>`canonical`, OpenGraph ve Twitter Card alanlarÄ±nÄ± doldur.</li>
-        <li>`robots.txt` ve `sitemap.xml` dosyalarÄ±nÄ± kÃ¶k dizine ekle.</li>
+        <li>`canonical`, OpenGraph ve Twitter Card alanlarını doldur.</li>
+        <li>`robots.txt` ve `sitemap.xml` dosyalarını kök dizine ekle.</li>
       </ul>
 
-      <h2>3. Performans ve UX KontrolÃ¼</h2>
-      <p>Ã–zellikle mobilde ilk ekran yÃ¼klenmesini hÄ±zlandÄ±rmak kullanÄ±cÄ± algÄ±sÄ±nÄ± doÄŸrudan etkiler. Gereksiz bÃ¼yÃ¼k gÃ¶rselleri kÃ¼Ã§Ã¼ltmek, animasyonlarÄ± amaca uygun kullanmak ve menÃ¼ akÄ±ÅŸÄ±nÄ± sade tutmak dÃ¶nÃ¼ÅŸÃ¼m tarafÄ±nda Ã¶lÃ§Ã¼lebilir fark yaratÄ±r.</p>
+      <h2>3. Performans ve UX Kontrolü</h2>
+      <p>Özellikle mobilde ilk ekran yüklenmesini hızlandırmak kullanıcı algısını doğrudan etkiler. Gereksiz büyük görselleri küçültmek, animasyonları amaca uygun kullanmak ve menü akışını sade tutmak dönüşüm tarafında ölçülebilir fark yaratır.</p>
 
-      <h2>4. Ã–lÃ§Ã¼mleme Disiplini</h2>
-      <p>YayÄ±n sonrasÄ± en kritik soru ÅŸudur: KullanÄ±cÄ±lar hangi iÃ§erikte kalÄ±yor, hangi sayfada Ã§Ä±kÄ±yor? Basit bir analitik kurulumu ile iÃ§erik stratejini veriyle yÃ¶nlendirebilirsin.</p>
+      <h2>4. Ölçümleme Disiplini</h2>
+      <p>Yayın sonrası en kritik soru şudur: Kullanıcılar hangi içerikte kalıyor, hangi sayfada çıkıyor? Basit bir analitik kurulumu ile içerik stratejini veriyle yönlendirebilirsin.</p>
 
       <div class="post-nav">
-        <a href="is-analistleri-icin-kpi-hiyerarsisi.html">Ã–nceki: KPI HiyerarÅŸisi</a>
+        <a href="is-analistleri-icin-kpi-hiyerarsisi.html">Önceki: KPI Hiyerarşisi</a>
         <a href="git-github-upstream-nedir.html">Sonraki: Git Upstream</a>
       </div>
-      <a class="post-home-link" href="../index.html">Ana sayfaya dÃ¶n</a>
+      <a class="post-home-link" href="../index.html">Ana sayfaya dön</a>
     </article>
   </main>
 
   <footer>
-    <p>Â© <span id="year"></span> Nebi Åeker</p>
+    <p>© <span id="year"></span> Nebi Şeker</p>
     <div class="footer-links">
       <a href="/rss.xml" target="_blank" rel="noreferrer">RSS</a>
       <a href="/sitemap.xml" target="_blank" rel="noreferrer">Sitemap</a>
@@ -98,5 +98,3 @@
   <script src="../script.js"></script>
 </body>
 </html>
-
-

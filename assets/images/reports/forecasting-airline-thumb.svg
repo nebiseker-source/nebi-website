@@ -1,0 +1,18 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700">
+      <stop stop-color="#1B222C"/>
+      <stop offset="1" stop-color="#0E1319"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="80" y="70" width="1040" height="560" rx="20" fill="#141A22" stroke="#2A3240" stroke-width="2"/>
+  <path d="M120 520C210 480 285 500 370 430C455 360 520 390 610 320C700 250 790 280 870 220C950 160 1010 170 1080 130" stroke="#D6B273" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="370" cy="430" r="9" fill="#D6B273"/>
+  <circle cx="610" cy="320" r="9" fill="#D6B273"/>
+  <circle cx="870" cy="220" r="9" fill="#D6B273"/>
+  <rect x="120" y="120" width="300" height="110" rx="12" fill="#1F2734"/>
+  <rect x="440" y="120" width="300" height="110" rx="12" fill="#202938"/>
+  <rect x="760" y="120" width="300" height="110" rx="12" fill="#202938"/>
+  <text x="120" y="580" fill="#F4F1EA" font-family="Manrope, Arial, sans-serif" font-size="36" font-weight="700">Forecasting Dashboard</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700">
+      <stop stop-color="#1B222C"/>
+      <stop offset="1" stop-color="#0E1319"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1040" height="540" rx="22" fill="#141A22" stroke="#2A3240" stroke-width="2"/>
+  <path d="M160 500C230 460 300 470 380 420C460 370 540 390 620 330C710 262 780 290 860 230C930 178 995 183 1060 140" stroke="#D6B273" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="380" cy="420" r="8" fill="#D6B273"/>
+  <circle cx="620" cy="330" r="8" fill="#D6B273"/>
+  <circle cx="860" cy="230" r="8" fill="#D6B273"/>
+  <path d="M170 210L330 170L270 250L420 220L250 310L300 245L170 210Z" fill="#D6B273" fill-opacity="0.25" stroke="#D6B273"/>
+  <text x="160" y="575" fill="#F4F1EA" font-family="Manrope, Arial, sans-serif" font-size="40" font-weight="700">Havayolu Talep Tahmini</text>
+</svg>

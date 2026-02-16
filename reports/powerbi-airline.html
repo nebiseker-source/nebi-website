@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power BI Havayolu Dashboard | Nebi Şeker</title>
+  <meta name="description" content="Power BI havayolu satış dashboard'u: amaç, veri seti, KPI'lar ve içgörüler." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nebi-website.pages.dev/reports/powerbi-airline.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Power BI Havayolu Dashboard" />
+  <meta property="og:description" content="Havayolu satış performansı ve KPI analizi detay sayfası." />
+  <meta property="og:url" content="https://nebi-website.pages.dev/reports/powerbi-airline.html" />
+  <meta property="og:image" content="https://nebi-website.pages.dev/assets/images/reports/powerbi-airline-thumb.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Power BI Havayolu Dashboard" />
+  <meta name="twitter:description" content="KPI bazlı havayolu satış analizi ve içgörüler." />
+  <meta name="twitter:image" content="https://nebi-website.pages.dev/assets/images/reports/powerbi-airline-thumb.svg" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-a"></div>
+  <div class="bg-shape bg-shape-b"></div>
+
+  <header class="topbar">
+    <a class="brand" href="../index.html#anasayfa">
+      <span class="brand-mark">NS</span>
+      <span class="brand-name">Nebi Şeker</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menü</button>
+    <nav class="menu" id="site-menu">
+      <a href="../index.html#hakkimda">Hakkımda</a>
+      <a href="../index.html#projeler">Projeler</a>
+      <a href="../index.html#raporlar">Raporlar</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="../index.html#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <main class="report-main">
+    <header class="report-header">
+      <p class="post-kicker">Power BI Dashboard</p>
+      <h1 class="post-title">Aylık Havayolu Kırılımlı Satışlar</h1>
+      <div class="post-info">
+        <span>Power BI</span><span>Forecasting</span><span>KPI</span>
+      </div>
+      <img class="blog-cover" src="/assets/images/reports/powerbi-airline-thumb.svg" alt="Power BI havayolu dashboard" />
+    </header>
+
+    <article class="report-article">
+      <h2>Amaç</h2>
+      <p>Havayolu bazlı satış performansını tek bakışta görünür hale getirerek fiyatlama, kampanya ve kapasite kararlarını hızlandırmak.</p>
+
+      <h2>Veri Seti</h2>
+      <p>1.2M satır işlem verisi; satış tarihi, kanal, havayolu, hat, tutar ve işlem tipi alanlarından oluşan aylık akış.</p>
+
+      <h2>KPI'lar</h2>
+      <ul>
+        <li>Toplam satış adedi</li>
+        <li>Aylık gelir büyümesi (%)</li>
+        <li>Havayolu pay dağılımı</li>
+        <li>İptal/iadeye göre net performans</li>
+      </ul>
+
+      <h2>Kullanılan Araçlar</h2>
+      <p>Power BI, DAX, SQL, Power Query.</p>
+
+      <h2>Öğrendiklerim</h2>
+      <p>Problem net tanımlandığında dashboard bir rapor değil karar motoruna dönüşüyor. En güçlü içgörü, üst metrik yerine alt kırılım değişimlerini erken yakalamaktan geliyor.</p>
+
+      <a class="post-home-link" href="../index.html#raporlar">Analiz & Raporlara dön</a>
+    </article>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nebi Şeker</p>
+    <div class="footer-links">
+      <a href="/rss.xml" target="_blank" rel="noreferrer">RSS</a>
+      <a href="/sitemap.xml" target="_blank" rel="noreferrer">Sitemap</a>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

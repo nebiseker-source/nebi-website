@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nebi Şeker Blog</title>
@@ -7,6 +7,14 @@
     <language>tr-TR</language>
     <lastBuildDate>Mon, 16 Feb 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://nebi-website.pages.dev/rss.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Havayolu Satış Tahmini Nasıl Yaptım?</title>
+      <link>https://nebi-website.pages.dev/blog/havayolu-satis-tahmini-nasil-yaptim.html</link>
+      <guid>https://nebi-website.pages.dev/blog/havayolu-satis-tahmini-nasil-yaptim.html</guid>
+      <pubDate>Mon, 16 Feb 2026 09:00:00 GMT</pubDate>
+      <description>Problem, metrik ve insight odaklı forecasting vaka notu.</description>
+    </item>
 
     <item>
       <title>Cloudflare Pages ile Yayınlama: Teknik ve Analitik Kontrol Listesi</title>

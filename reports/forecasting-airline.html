@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forecasting Projesi | Nebi Şeker</title>
+  <meta name="description" content="Havayolu satış tahmini için forecasting projesi: problem, metrik, insight ve çıktı detayları." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nebi-website.pages.dev/reports/forecasting-airline.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Havayolu Satış Forecasting Projesi" />
+  <meta property="og:description" content="Havayolu satış tahmin modelinin yaklaşımı, metrikleri ve içgörüleri." />
+  <meta property="og:url" content="https://nebi-website.pages.dev/reports/forecasting-airline.html" />
+  <meta property="og:image" content="https://nebi-website.pages.dev/assets/images/reports/forecasting-airline-thumb.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Havayolu Satış Forecasting Projesi" />
+  <meta name="twitter:description" content="Forecasting modelleme süreci ve içgörüleri." />
+  <meta name="twitter:image" content="https://nebi-website.pages.dev/assets/images/reports/forecasting-airline-thumb.svg" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-a"></div>
+  <div class="bg-shape bg-shape-b"></div>
+
+  <header class="topbar">
+    <a class="brand" href="../index.html#anasayfa">
+      <span class="brand-mark">NS</span>
+      <span class="brand-name">Nebi Şeker</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menü</button>
+    <nav class="menu" id="site-menu">
+      <a href="../index.html#hakkimda">Hakkımda</a>
+      <a href="../index.html#projeler">Projeler</a>
+      <a href="../index.html#raporlar">Raporlar</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="../index.html#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <main class="report-main">
+    <header class="report-header">
+      <p class="post-kicker">Forecasting</p>
+      <h1 class="post-title">Havayolu Satış Tahmini Projesi</h1>
+      <div class="post-info">
+        <span>Problem</span><span>Metric</span><span>Insight</span>
+      </div>
+      <img class="blog-cover" src="/assets/images/reports/forecasting-airline-thumb.svg" alt="Forecasting dashboard" />
+    </header>
+
+    <article class="report-article">
+      <h2>Amaç</h2>
+      <p>Problem: Satış dalgalanması yüksek olduğu için planlama kararları geç alınıyor, kampanya etkisi doğru ölçülemiyordu.</p>
+
+      <h2>Veri Seti</h2>
+      <p>Rezervasyon geçmişi, sezonluk etkiler, kanal kırılımları, fiyat aralıkları ve iade verileri birleştirilerek model verisi oluşturuldu.</p>
+
+      <h2>KPI'lar</h2>
+      <ul>
+        <li>MAPE (tahmin hata oranı)</li>
+        <li>Haftalık talep sapması</li>
+        <li>Kampanya dönemi satış etkisi</li>
+      </ul>
+
+      <h2>Kullanılan Araçlar</h2>
+      <p>Python, Power BI, SQL, Time Series modelleme yaklaşımı.</p>
+
+      <h2>Öğrendiklerim</h2>
+      <p>Insight: En güçlü etki tek metrikte değil, belirli kanal ve dönem birleşimlerinde çıktı. Forecasting modeli kadar iş biriminin aksiyon disiplini de sonucu belirliyor.</p>
+
+      <a class="post-home-link" href="../index.html#raporlar">Analiz & Raporlara dön</a>
+    </article>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nebi Şeker</p>
+    <div class="footer-links">
+      <a href="/rss.xml" target="_blank" rel="noreferrer">RSS</a>
+      <a href="/sitemap.xml" target="_blank" rel="noreferrer">Sitemap</a>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

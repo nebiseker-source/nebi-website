@@ -1,0 +1,20 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700">
+      <stop stop-color="#1C232D"/>
+      <stop offset="1" stop-color="#0F141B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="80" y="70" width="1040" height="560" rx="20" fill="#151B23" stroke="#2B3341" stroke-width="2"/>
+  <rect x="120" y="120" width="960" height="60" rx="10" fill="#202937"/>
+  <g opacity="0.9">
+    <rect x="120" y="210" width="960" height="52" rx="8" fill="#1D2532"/>
+    <rect x="120" y="274" width="960" height="52" rx="8" fill="#1A2230"/>
+    <rect x="120" y="338" width="960" height="52" rx="8" fill="#1D2532"/>
+    <rect x="120" y="402" width="960" height="52" rx="8" fill="#1A2230"/>
+    <rect x="120" y="466" width="960" height="52" rx="8" fill="#1D2532"/>
+  </g>
+  <rect x="140" y="128" width="220" height="44" rx="8" fill="#D6B273" fill-opacity="0.28"/>
+  <text x="120" y="570" fill="#F4F1EA" font-family="Manrope, Arial, sans-serif" font-size="36" font-weight="700">Sheets / Excel Analiz</text>
+</svg>

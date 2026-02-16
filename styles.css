@@ -387,6 +387,122 @@ p:last-child {
   margin-top: var(--space-4);
 }
 
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.reports-grid-single {
+  grid-template-columns: 1fr;
+}
+
+.report-group + .report-group {
+  margin-top: var(--space-8);
+}
+
+.report-card {
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-card);
+  background: linear-gradient(165deg, rgba(250, 246, 238, 0.03), rgba(22, 25, 30, 0.72));
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+}
+
+.report-card h3 {
+  margin: 0 0 var(--space-3);
+  font-size: 1.08rem;
+}
+
+.report-card h4 {
+  margin: 0 0 var(--space-3);
+  font-size: 1.02rem;
+}
+
+.report-card p {
+  color: var(--muted);
+  margin-bottom: var(--space-4);
+}
+
+.report-thumb {
+  width: 100%;
+  height: 170px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(240, 234, 224, 0.2);
+  margin-bottom: var(--space-4);
+}
+
+.report-metrics {
+  margin: 0 0 var(--space-4);
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+}
+
+.report-metrics li {
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.report-embed {
+  width: 100%;
+  min-height: 380px;
+  border: 1px solid var(--stroke);
+  border-radius: 14px;
+  background: #0f1319;
+  margin-top: var(--space-4);
+}
+
+.btn-disabled,
+.btn:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.report-cover {
+  width: 100%;
+  max-width: 920px;
+  border-radius: 16px;
+  margin: 28px auto;
+  display: block;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.report-main {
+  width: min(980px, 92vw);
+  margin: 0 auto;
+  padding: var(--space-10) 0 var(--space-12);
+}
+
+.report-header {
+  margin-bottom: var(--space-5);
+}
+
+.report-article {
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(var(--space-6), 4vw, var(--space-10));
+}
+
+.report-article h2 {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+.report-article ul {
+  margin: 0 0 var(--space-4);
+  padding-left: 20px;
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+}
+
 .project-lanes-wrap {
   margin-top: var(--space-8);
   padding-top: var(--space-6);
@@ -817,6 +933,10 @@ button:focus-visible,
   }
 
   .project-lanes {
+    grid-template-columns: 1fr;
+  }
+
+  .reports-grid {
     grid-template-columns: 1fr;
   }
 

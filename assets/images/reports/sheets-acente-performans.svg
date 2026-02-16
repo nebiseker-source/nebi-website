@@ -1,0 +1,18 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700">
+      <stop stop-color="#1C232D"/>
+      <stop offset="1" stop-color="#0F141B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="90" y="80" width="1020" height="540" rx="20" fill="#151B23" stroke="#2A3341" stroke-width="2"/>
+  <rect x="130" y="120" width="940" height="60" rx="10" fill="#1F2734"/>
+  <rect x="130" y="200" width="940" height="52" rx="8" fill="#1C2431"/>
+  <rect x="130" y="264" width="940" height="52" rx="8" fill="#1A2230"/>
+  <rect x="130" y="328" width="940" height="52" rx="8" fill="#1C2431"/>
+  <rect x="130" y="392" width="940" height="52" rx="8" fill="#1A2230"/>
+  <rect x="130" y="456" width="940" height="52" rx="8" fill="#1C2431"/>
+  <rect x="150" y="128" width="230" height="44" rx="8" fill="#D6B273" fill-opacity="0.28"/>
+  <text x="130" y="585" fill="#F4F1EA" font-family="Manrope, Arial, sans-serif" font-size="40" font-weight="700">Sheets Acente Performans</text>
+</svg>

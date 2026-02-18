@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" fill="none">
+  <rect width="1400" height="760" rx="24" fill="#12161C"/>
+  <rect x="60" y="70" width="1280" height="620" rx="18" fill="#171C24" stroke="#2C3440"/>
+  <text x="96" y="130" fill="#E9D8B4" font-family="Manrope, Arial, sans-serif" font-size="34" font-weight="700">Ölçüm Olgunluğu ve KPI Hiyerarşisi</text>
+  <text x="96" y="164" fill="#A7B0BF" font-family="Manrope, Arial, sans-serif" font-size="20">Output metriklerden outcome odaklı sisteme geçiş</text>
+
+  <rect x="96" y="230" width="240" height="90" rx="12" fill="#232C38" stroke="#3A4556"/>
+  <text x="142" y="286" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="700">Analytics</text>
+  <rect x="376" y="230" width="240" height="90" rx="12" fill="#263447" stroke="#4A5A72"/>
+  <text x="414" y="286" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="700">Prediction</text>
+  <rect x="656" y="230" width="240" height="90" rx="12" fill="#2A3C54" stroke="#5B6F8E"/>
+  <text x="672" y="286" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="700">Recommendation</text>
+  <rect x="936" y="230" width="240" height="90" rx="12" fill="#304662" stroke="#6A82A8"/>
+  <text x="980" y="286" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="700">Automation</text>
+
+  <path d="M336 274H364" stroke="#E9D8B4" stroke-width="3"/>
+  <path d="M616 274H644" stroke="#E9D8B4" stroke-width="3"/>
+  <path d="M896 274H924" stroke="#E9D8B4" stroke-width="3"/>
+
+  <rect x="140" y="390" width="1120" height="230" rx="14" fill="#141A22" stroke="#2C3440"/>
+  <text x="176" y="440" fill="#D8E0EC" font-family="Manrope, Arial, sans-serif" font-size="22" font-weight="700">KPI Katmanları</text>
+  <text x="176" y="484" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="19">North Star KPI:</text>
+  <text x="340" y="484" fill="#A7B0BF" font-family="Manrope, Arial, sans-serif" font-size="19">Uzun vadeli stratejik etki metriği</text>
+  <text x="176" y="520" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="19">Ana KPI:</text>
+  <text x="286" y="520" fill="#A7B0BF" font-family="Manrope, Arial, sans-serif" font-size="19">İş birimlerinin performans sürücüleri</text>
+  <text x="176" y="556" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="19">Alt KPI:</text>
+  <text x="272" y="556" fill="#A7B0BF" font-family="Manrope, Arial, sans-serif" font-size="19">Operasyonel seviyede günlük/haftalık izleme</text>
+  <text x="176" y="592" fill="#E9D8B4" font-family="Manrope, Arial, sans-serif" font-size="18">Not: Ölçtüğünüz metrik, ekip davranışını doğrudan biçimlendirir.</text>
+</svg>

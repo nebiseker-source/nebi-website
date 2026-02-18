@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" fill="none">
+  <rect width="1400" height="760" rx="24" fill="#12161C"/>
+  <rect x="60" y="70" width="1280" height="620" rx="18" fill="#171C24" stroke="#2C3440"/>
+  <text x="96" y="130" fill="#E9D8B4" font-family="Manrope, Arial, sans-serif" font-size="34" font-weight="700">Agentic World: Yeni Etkileşim Akışı</text>
+  <text x="96" y="164" fill="#A7B0BF" font-family="Manrope, Arial, sans-serif" font-size="20">Kullanıcı -> AI Agent -> Aksiyon zinciri</text>
+
+  <rect x="120" y="250" width="220" height="110" rx="14" fill="#232C38" stroke="#3A4556"/>
+  <text x="170" y="314" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="700">Kullanıcı</text>
+
+  <rect x="420" y="250" width="260" height="110" rx="14" fill="#2A3545" stroke="#4A5A72"/>
+  <text x="476" y="314" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="700">AI Agent</text>
+
+  <rect x="760" y="180" width="220" height="80" rx="12" fill="#202734" stroke="#3A4556"/>
+  <text x="794" y="228" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="20">API Layer</text>
+  <rect x="760" y="280" width="220" height="80" rx="12" fill="#202734" stroke="#3A4556"/>
+  <text x="780" y="328" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="20">Orchestration</text>
+  <rect x="760" y="380" width="220" height="80" rx="12" fill="#202734" stroke="#3A4556"/>
+  <text x="800" y="428" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="20">Policy</text>
+
+  <rect x="1060" y="250" width="220" height="110" rx="14" fill="#2E435E" stroke="#6A82A8"/>
+  <text x="1120" y="314" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="700">Aksiyon</text>
+
+  <path d="M340 305H402" stroke="#E9D8B4" stroke-width="3"/>
+  <path d="M680 305H742" stroke="#E9D8B4" stroke-width="3"/>
+  <path d="M980 305H1042" stroke="#E9D8B4" stroke-width="3"/>
+  <path d="M680 305L742 220" stroke="#E9D8B4" stroke-width="2"/>
+  <path d="M680 305L742 420" stroke="#E9D8B4" stroke-width="2"/>
+
+  <rect x="120" y="520" width="1160" height="120" rx="12" fill="#141A22" stroke="#2C3440"/>
+  <text x="150" y="568" fill="#D8E0EC" font-family="Manrope, Arial, sans-serif" font-size="20" font-weight="600">Kritik Not: Agent tabanlı dünyada rekabet avantajı, API kalitesi + süreç orkestrasyonu + güvenli policy yönetimi ile oluşur.</text>
+  <text x="150" y="602" fill="#9EABBF" font-family="Manrope, Arial, sans-serif" font-size="18">Arayüz tek başına yeterli değildir; sistem entegrasyonu ve izlenebilirlik ana belirleyicilerdir.</text>
+</svg>

@@ -532,6 +532,41 @@ p:last-child {
   font-size: 1.08rem;
 }
 
+.cert-preview {
+  width: 100%;
+  height: 300px;
+  border: 1px solid rgba(240, 234, 224, 0.2);
+  border-radius: 12px;
+  margin-bottom: var(--space-4);
+  background: rgba(245, 242, 235, 0.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
+
+.note-diagram {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(240, 234, 224, 0.16);
+  margin: var(--space-4) 0 var(--space-5);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+.session-list {
+  margin: 0 0 var(--space-4);
+  padding-left: 20px;
+  color: var(--muted);
+  display: grid;
+  gap: 10px;
+}
+
+.session-list li {
+  line-height: 1.55;
+}
+
+.session-date {
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
 .project-lanes-wrap {
   margin-top: var(--space-8);
   padding-top: var(--space-6);
@@ -1046,6 +1081,10 @@ button:focus-visible,
 
   .dashboard-embed {
     height: 520px;
+  }
+
+  .cert-preview {
+    height: 240px;
   }
 
   .panel {

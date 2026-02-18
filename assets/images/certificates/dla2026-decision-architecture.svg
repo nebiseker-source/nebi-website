@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" fill="none">
+  <rect width="1400" height="760" rx="24" fill="#12161C"/>
+  <rect x="60" y="70" width="1280" height="620" rx="18" fill="#171C24" stroke="#2C3440"/>
+  <text x="96" y="130" fill="#E9D8B4" font-family="Manrope, Arial, sans-serif" font-size="34" font-weight="700">AI-First Karar Mimarisi</text>
+  <text x="96" y="164" fill="#A7B0BF" font-family="Manrope, Arial, sans-serif" font-size="20">Tool adoption yerine karar zinciri tasarımı</text>
+
+  <rect x="96" y="220" width="260" height="120" rx="14" fill="#202734" stroke="#3A4556"/>
+  <text x="126" y="280" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="22" font-weight="600">Veri Girişi</text>
+
+  <rect x="420" y="220" width="260" height="120" rx="14" fill="#202734" stroke="#3A4556"/>
+  <text x="442" y="280" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="22" font-weight="600">Model Çıktısı</text>
+
+  <rect x="744" y="180" width="260" height="80" rx="14" fill="#2A3545" stroke="#4A5A72"/>
+  <text x="772" y="228" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="19" font-weight="600">Karar Destek</text>
+  <rect x="744" y="280" width="260" height="80" rx="14" fill="#2A3545" stroke="#4A5A72"/>
+  <text x="772" y="328" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="19" font-weight="600">Yarı Otonom</text>
+  <rect x="744" y="380" width="260" height="80" rx="14" fill="#2A3545" stroke="#4A5A72"/>
+  <text x="772" y="428" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="19" font-weight="600">Tam Otonom</text>
+
+  <rect x="1070" y="220" width="220" height="120" rx="14" fill="#202734" stroke="#3A4556"/>
+  <text x="1110" y="280" fill="#F4F7FB" font-family="Manrope, Arial, sans-serif" font-size="22" font-weight="600">Aksiyon</text>
+
+  <path d="M356 280H402" stroke="#E9D8B4" stroke-width="3"/>
+  <path d="M680 280H726" stroke="#E9D8B4" stroke-width="3"/>
+  <path d="M1004 280H1058" stroke="#E9D8B4" stroke-width="3"/>
+  <path d="M1004 220H1048V220" stroke="#E9D8B4" stroke-width="2"/>
+  <path d="M1004 420H1048V340" stroke="#E9D8B4" stroke-width="2"/>
+
+  <rect x="96" y="510" width="1194" height="130" rx="12" fill="#141A22" stroke="#2C3440"/>
+  <text x="126" y="560" fill="#D8E0EC" font-family="Manrope, Arial, sans-serif" font-size="20" font-weight="600">Kontrol Katmanı: Human-in-the-loop, risk eşiği, onay mekanizması, geri alma (rollback)</text>
+  <text x="126" y="598" fill="#9EABBF" font-family="Manrope, Arial, sans-serif" font-size="18">Karar tipine göre farklı kontrol seviyesi tanımlanır; hata maliyeti yükseldikçe insan onayı zorunlu olur.</text>
+</svg>

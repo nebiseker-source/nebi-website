@@ -2,14 +2,19 @@
   <rect width="1200" height="630" rx="20" fill="#1d2733"/>
   <rect x="32" y="32" width="1136" height="566" rx="16" fill="#253240" stroke="#516a85"/>
   <text x="76" y="112" fill="#f4f8fc" font-size="42" font-family="Arial" font-weight="700">Forecasting Dashboard</text>
-  <text x="76" y="152" fill="#b8cbe0" font-size="23" font-family="Arial">Rapor onizleme</text>
-  <rect x="90" y="220" width="1010" height="260" rx="16" fill="#2b3d52"/>
-  <path d="M130 430L230 390L330 404L430 350L530 360L630 318L730 330L830 282L930 296L1030 250" stroke="#f1c98b" stroke-width="5" fill="none"/>
-  <path d="M130 430L230 400L330 414L430 380L530 396L630 366L730 378L830 352L930 362L1030 338" stroke="#88a9cd" stroke-width="3" fill="none" stroke-dasharray="8 7"/>
-  <rect x="130" y="248" width="200" height="64" rx="12" fill="#334960"/>
-  <rect x="350" y="248" width="200" height="64" rx="12" fill="#3f5a78"/>
-  <rect x="570" y="248" width="200" height="64" rx="12" fill="#4a6a8d"/>
-  <rect x="90" y="500" width="1010" height="64" rx="12" fill="#2f4257"/>
-  <text x="120" y="540" fill="#eaf2fb" font-size="24" font-family="Arial" font-weight="700">Nebi Seker | Business Analyst &amp; Data Scientist</text>
-</svg>
+  <text x="76" y="152" fill="#c5d6ea" font-size="24" font-family="Arial">Rapor &#246;nizleme</text>
 
+  <rect x="90" y="220" width="1010" height="180" rx="16" fill="#2b3d52"/>
+  <rect x="120" y="252" width="280" height="112" rx="12" fill="#334960"/>
+  <rect x="455" y="252" width="280" height="112" rx="12" fill="#3f5a78"/>
+  <rect x="790" y="252" width="280" height="112" rx="12" fill="#4a6a8d"/>
+  <text x="150" y="316" fill="#ffffff" font-size="24" font-family="Arial" font-weight="700">Trend</text>
+  <text x="485" y="316" fill="#ffffff" font-size="24" font-family="Arial" font-weight="700">Sezon</text>
+  <text x="820" y="316" fill="#ffffff" font-size="24" font-family="Arial" font-weight="700">MAPE</text>
+
+  <rect x="110" y="420" width="980" height="60" rx="10" fill="#233446" stroke="#4b6582"/>
+  <text x="140" y="455" fill="#dbe9f8" font-size="22" font-family="Arial">Veri odakl&#305; analitik anlat&#305;m</text>
+
+  <rect x="90" y="500" width="1010" height="64" rx="12" fill="#2f4257"/>
+  <text x="120" y="540" fill="#f1f7ff" font-size="24" font-family="Arial" font-weight="700">Nebi &#350;eker | Business Analyst &amp; Data Scientist</text>
+</svg>

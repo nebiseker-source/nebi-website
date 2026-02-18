@@ -2,13 +2,19 @@
   <rect width="1200" height="630" rx="20" fill="#1d2733"/>
   <rect x="32" y="32" width="1136" height="566" rx="16" fill="#253240" stroke="#516a85"/>
   <text x="76" y="112" fill="#f4f8fc" font-size="42" font-family="Arial" font-weight="700">Agentic World ve API-First</text>
-  <text x="76" y="152" fill="#b8cbe0" font-size="23" font-family="Arial">Dijital Liderlik Akademisi 2026</text>
-  <rect x="90" y="242" width="240" height="108" rx="14" fill="#334960"/>
-  <rect x="430" y="242" width="240" height="108" rx="14" fill="#3f5a78"/>
-  <rect x="770" y="242" width="320" height="108" rx="14" fill="#4a6a8d"/>
-  <path d="M330 296H420" stroke="#f1c98b" stroke-width="4"/>
-  <path d="M670 296H760" stroke="#f1c98b" stroke-width="4"/>
-  <rect x="90" y="500" width="1010" height="64" rx="12" fill="#2f4257"/>
-  <text x="120" y="540" fill="#eaf2fb" font-size="24" font-family="Arial" font-weight="700">Nebi Seker | Business Analyst &amp; Data Scientist</text>
-</svg>
+  <text x="76" y="152" fill="#c5d6ea" font-size="24" font-family="Arial">Dijital Liderlik Akademisi 2026</text>
 
+  <rect x="90" y="220" width="1010" height="180" rx="16" fill="#2b3d52"/>
+  <rect x="120" y="252" width="280" height="112" rx="12" fill="#334960"/>
+  <rect x="455" y="252" width="280" height="112" rx="12" fill="#3f5a78"/>
+  <rect x="790" y="252" width="280" height="112" rx="12" fill="#4a6a8d"/>
+  <text x="150" y="316" fill="#ffffff" font-size="24" font-family="Arial" font-weight="700">Kullan&#305;c&#305;</text>
+  <text x="485" y="316" fill="#ffffff" font-size="24" font-family="Arial" font-weight="700">AI Agent</text>
+  <text x="820" y="316" fill="#ffffff" font-size="24" font-family="Arial" font-weight="700">API Orchestration</text>
+
+  <rect x="110" y="420" width="980" height="60" rx="10" fill="#233446" stroke="#4b6582"/>
+  <text x="140" y="455" fill="#dbe9f8" font-size="22" font-family="Arial">Veri odakl&#305; analitik anlat&#305;m</text>
+
+  <rect x="90" y="500" width="1010" height="64" rx="12" fill="#2f4257"/>
+  <text x="120" y="540" fill="#f1f7ff" font-size="24" font-family="Arial" font-weight="700">Nebi &#350;eker | Business Analyst &amp; Data Scientist</text>
+</svg>

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#101214" />
+  <meta name="theme-color" content="#eef1f4" />
   <title>Nebi Şeker | Business Analyst & Data Scientist</title>
   <meta
     name="description"
-    content="Nebi Şeker'in portfolyosu: full-stack web geliştirme, öne çıkan projeler, yetkinlikler ve iletişim."
+    content="Nebi Şeker portfolyosu: business analysis, data science, raporlama sistemleri ve karar odaklı ürün çalışmaları."
   />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://nebi-website.pages.dev/" />
@@ -29,6 +29,27 @@
     content="Projelerim, yetkinliklerim ve iletişim bilgilerim."
   />
   <meta name="twitter:image" content="https://nebi-website.pages.dev/assets/og.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nebi Şeker",
+    "jobTitle": "Business Analyst & Data Scientist",
+    "url": "https://nebi-website.pages.dev/",
+    "sameAs": [
+      "https://www.linkedin.com/in/nebiseker/",
+      "https://github.com/nebiseker-source"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Nebi Şeker | Business Analyst & Data Scientist",
+    "url": "https://nebi-website.pages.dev/"
+  }
+  </script>
 
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
@@ -67,13 +88,13 @@
 
   <main>
     <section id="anasayfa" class="hero reveal">
-      <p class="kicker">Kişisel Portfolyo</p>
+      <p class="kicker">Nebi Şeker | Kişisel Portfolyo</p>
       <div class="hero-identity">
         <img class="avatar" src="assets/avatar.svg" alt="Nebi Şeker avatarı" />
-        <h1>Nebi Şeker</h1>
+        <h1>Business Analyst & Data Scientist</h1>
       </div>
       <p class="subtitle">
-        Operasyon ve entegrasyon süreçlerini yöneten; veri analizi ve web geliştirme ile verimlilik odaklı çözümler üreten bir profesyonelim.
+        Ürün, operasyon ve veri akışlarını ölçülebilir sistemlere dönüştürerek karar kalitesini artıran çözümler geliştiriyorum.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projeler">Projelerimi İncele</a>
@@ -98,7 +119,10 @@
     </section>
 
     <section id="hakkimda" class="panel reveal">
-      <h2>Hakkımda</h2>
+      <div class="section-header">
+        <h2>Hakkımda</h2>
+        <p>Analitik düşünce, operasyonel disiplin ve veri odaklı karar mekanizması.</p>
+      </div>
       <p>
         Operasyon, entegrasyon ve raporlama süreçlerinde 5+ yıllık deneyime sahip; veriyle karar alma kültürünü güçlendiren, süreçleri ölçülebilir şekilde iyileştiren bir profesyonelim.
       </p>
@@ -118,14 +142,18 @@
     </section>
 
     <section id="projeler" class="panel reveal">
-      <h2>Öne Çıkan Projeler</h2>
+      <div class="section-header">
+        <h2>Öne Çıkan Projeler</h2>
+        <p>Problem, yaklaşım ve sonuç odağında hazırlanmış seçili çalışmalar.</p>
+      </div>
       <div class="cards">
         <article class="card">
           <div class="card-media" aria-hidden="true"></div>
           <h3>Nebi Website</h3>
           <p class="case-line"><strong>Problem:</strong> Kişisel marka ve projeleri tek bir net vitrinde sunma ihtiyacı.</p>
-          <p class="case-line"><strong>Çözüm:</strong> Premium UI dili, mobil uyumlu navigasyon ve SEO odaklı portfolyo mimarisi.</p>
+          <p class="case-line"><strong>Yaklaşım:</strong> Premium UI dili, mobil uyumlu navigasyon ve SEO odaklı portfolyo mimarisi.</p>
           <p class="case-line"><strong>Sonuç:</strong> Daha güçlü ilk izlenim, paylaşılabilir yapı ve hızlı içerik güncelleme.</p>
+          <p class="case-line"><strong>Araçlar:</strong> HTML, CSS, JavaScript, teknik SEO.</p>
           <div class="badge-list">
             <span class="card-tag">HTML</span>
             <span class="card-tag">CSS</span>
@@ -141,8 +169,9 @@
           <div class="card-media" aria-hidden="true"></div>
           <h3>Anonim Proje A | Havayolu Talep Tahmini</h3>
           <p class="case-line"><strong>Problem:</strong> Uçuş bazlı talep dalgalanmaları nedeniyle fiyatlama ve kapasite planlamasında öngörü hataları oluşuyordu.</p>
-          <p class="case-line"><strong>Çözüm:</strong> Tarihsel satış, sezon etkisi ve operasyonel verileri birleştiren tahminleme modeli ve karar destek ekranı geliştirildi.</p>
+          <p class="case-line"><strong>Yaklaşım:</strong> Tarihsel satış, sezon etkisi ve operasyonel verileri birleştiren tahminleme modeli ve karar destek ekranı geliştirildi.</p>
           <p class="case-line"><strong>Sonuç:</strong> Planlama kararlarında öngörülebilirlik arttı, operasyon ekiplerinin aksiyon alma süresi kısaldı.</p>
+          <p class="case-line"><strong>Araçlar:</strong> Python, time series modelleme, Power BI.</p>
           <div class="badge-list">
             <span class="card-tag">Python</span>
             <span class="card-tag">Time Series</span>
@@ -158,8 +187,9 @@
           <div class="card-media" aria-hidden="true"></div>
           <h3>Anonim Proje B | İptal/Değişim Risk Analizi</h3>
           <p class="case-line"><strong>Problem:</strong> Bilet iptal ve değişim süreçlerinde belirsizlik kaynaklı finansal ve operasyonel risk artışı yaşanıyordu.</p>
-          <p class="case-line"><strong>Çözüm:</strong> Bulanık modelleme yöntemleriyle risk faktörlerini ağırlıklandıran ve senaryo bazlı karar desteği sağlayan yapı tasarlandı.</p>
+          <p class="case-line"><strong>Yaklaşım:</strong> Bulanık modelleme yöntemleriyle risk faktörlerini ağırlıklandıran ve senaryo bazlı karar desteği sağlayan yapı tasarlandı.</p>
           <p class="case-line"><strong>Sonuç:</strong> Riskli işlemler daha erken tespit edildi, manuel değerlendirme yükü azaldı ve karar kalitesi iyileşti.</p>
+          <p class="case-line"><strong>Araçlar:</strong> Fuzzy Logic, Excel VBA, Power BI.</p>
           <div class="badge-list">
             <span class="card-tag">Fuzzy Logic</span>
             <span class="card-tag">Risk Analysis</span>
@@ -204,7 +234,10 @@
     </section>
 
     <section id="raporlar" class="panel reveal">
-      <h2>Analiz & Raporlar</h2>
+      <div class="section-header">
+        <h2>Analiz & Raporlar</h2>
+        <p>Veri akışını karar çıktısına dönüştüren dashboard ve rapor yapıları.</p>
+      </div>
 
       <div class="report-group">
         <h3 class="subsection-title">Power BI Dashboard'ları</h3>
@@ -213,6 +246,7 @@
             <img class="report-thumb" src="/assets/images/reports/havayolu-talep-tahmini.svg" alt="Havayolu Talep Tahmini kapak görseli" />
             <h4>Havayolu Talep Tahmini</h4>
             <p>Geçmiş satış verileri üzerinden aylık ve güzergâh bazlı talep tahmini yaklaşımı geliştirdim. Sezonluk etkiler ve trend analizleri ile öngörü doğruluğunu artırmayı hedefledim.</p>
+            <p class="case-line"><strong>Araçlar:</strong> Forecasting, Time Series, Python, Business Analytics.</p>
             <div class="badge-list">
               <span class="card-tag">Forecasting</span>
               <span class="card-tag">Time Series</span>
@@ -234,6 +268,7 @@
             <img class="report-thumb" src="/assets/images/reports/powerbi-havayolu-satis.svg" alt="Power BI Havayolu Satış kapak görseli" />
             <h4>Havayolu Satış Performans Dashboard (Power BI)</h4>
             <p>Havayolu bazlı satış adet, ciro ve büyüme oranlarını analiz eden interaktif bir BI dashboard kurguladım. KPI’lar ve filtrelerle hızlı içgörü üretmeyi amaçlıyor.</p>
+            <p class="case-line"><strong>Araçlar:</strong> Power BI, DAX, KPI modelleme, BI.</p>
             <div class="badge-list">
               <span class="card-tag">Power BI</span>
               <span class="card-tag">DAX</span>
@@ -260,6 +295,7 @@
             <img class="report-thumb" src="/assets/images/reports/sheets-acente-performans.svg" alt="Sheets Acente Performans kapak görseli" />
             <h4>SkyTurk Havayolu Satış Raporu (Google Sheets / Excel)</h4>
             <p>SkyTurk havayolu satış adet ve ciro performansını pivot tablolar ve dinamik grafiklerle analiz eden rapor yapısı oluşturdum. Segmentasyon ile güçlü/zayıf performans alanlarını görünür kılıyor.</p>
+            <p class="case-line"><strong>Araçlar:</strong> Google Sheets, Excel, Pivot, raporlama otomasyonu.</p>
             <div class="badge-list">
               <span class="card-tag">Google Sheets</span>
               <span class="card-tag">Excel</span>
@@ -281,7 +317,10 @@
     </section>
 
     <section id="sertifikalar" class="panel reveal">
-      <h2>Eğitim & Sertifikalar</h2>
+      <div class="section-header">
+        <h2>Eğitim & Sertifikalar</h2>
+        <p>Profesyonel gelişim sürecimde tamamladığım programlar ve notlar.</p>
+      </div>
       <div class="cert-grid">
         <article class="cert-card">
           <iframe
@@ -318,7 +357,10 @@
     </section>
 
     <section id="resume" class="panel reveal">
-      <h2>Resume</h2>
+      <div class="section-header">
+        <h2>Resume</h2>
+        <p>Deneyim ve eğitim geçmişimde öne çıkan sorumluluklar ve çıktılar.</p>
+      </div>
       <p>İş deneyimi ve eğitim geçmişimden öne çıkan başlıklar:</p>
       <div class="resume-grid">
         <article class="resume-block">
@@ -384,8 +426,10 @@
     </section>
 
     <section id="iletisim" class="panel reveal">
-      <h2>İletişim</h2>
-      <p>Yeni bir ürün, ekip veya freelance proje için iletişime geçebilirsin.</p>
+      <div class="section-header">
+        <h2>İletişim</h2>
+        <p>Yeni bir ürün, ekip veya danışmanlık/freelance proje için iletişime geçebilirsin.</p>
+      </div>
       <div class="contact-grid">
         <a href="mailto:nebiseker@gmail.com">nebiseker@gmail.com</a>
         <a href="https://www.linkedin.com/in/nebiseker/" target="_blank" rel="noreferrer">LinkedIn</a>

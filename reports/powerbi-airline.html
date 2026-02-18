@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Power BI Havayolu Dashboard | Nebi Şeker</title>
-  <meta name="description" content="Power BI havayolu satış dashboard'u: amaç, veri seti, KPI'lar ve içgörüler." />
+  <title>Power BI Havayolu Dashboard | Nebi Åeker</title>
+  <meta name="description" content="Power BI havayolu satÄ±ÅŸ dashboard'u: amaÃ§, veri seti, KPI'lar ve iÃ§gÃ¶rÃ¼ler." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://nebi-website.pages.dev/reports/powerbi-airline.html" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Power BI Havayolu Dashboard" />
-  <meta property="og:description" content="Havayolu satış performansı ve KPI analizi detay sayfası." />
+  <meta property="og:description" content="Havayolu satÄ±ÅŸ performansÄ± ve KPI analizi detay sayfasÄ±." />
   <meta property="og:url" content="https://nebi-website.pages.dev/reports/powerbi-airline.html" />
   <meta property="og:image" content="https://nebi-website.pages.dev/assets/images/reports/powerbi-airline-thumb.svg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Power BI Havayolu Dashboard" />
-  <meta name="twitter:description" content="KPI bazlı havayolu satış analizi ve içgörüler." />
+  <meta name="twitter:description" content="KPI bazlÄ± havayolu satÄ±ÅŸ analizi ve iÃ§gÃ¶rÃ¼ler." />
   <meta name="twitter:image" content="https://nebi-website.pages.dev/assets/images/reports/powerbi-airline-thumb.svg" />
   <link rel="icon" type="image/png" href="../assets/favicon.png" />
   <link rel="manifest" href="../site.webmanifest" />
@@ -31,14 +31,16 @@
   <header class="topbar">
     <a class="brand" href="../index.html#anasayfa">
       <span class="brand-mark">NS</span>
-      <span class="brand-name">Nebi Şeker</span>
+      <span class="brand-name">Nebi Åeker</span>
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menü</button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">MenÃ¼</button>
     <nav class="menu" id="site-menu">
       <a href="../index.html#hakkimda">Hakkımda</a>
       <a href="../index.html#projeler">Projeler</a>
-      <a href="../index.html#raporlar">Raporlar</a>
+      <a class="active" href="../index.html#raporlar">Raporlar</a>
+      <a href="../index.html#sertifikalar">Sertifikalar</a>
       <a href="../blog/index.html">Blog</a>
+      <a href="../index.html#resume">Resume</a>
       <a href="../index.html#iletisim">İletişim</a>
     </nav>
   </header>
@@ -46,7 +48,7 @@
   <main class="report-main">
     <header class="report-header">
       <p class="post-kicker">Power BI Dashboard</p>
-      <h1 class="post-title">Aylık Havayolu Kırılımlı Satışlar</h1>
+      <h1 class="post-title">AylÄ±k Havayolu KÄ±rÄ±lÄ±mlÄ± SatÄ±ÅŸlar</h1>
       <div class="post-info">
         <span>Power BI</span><span>Forecasting</span><span>KPI</span>
       </div>
@@ -54,32 +56,32 @@
     </header>
 
     <article class="report-article">
-      <h2>Amaç</h2>
-      <p>Havayolu bazlı satış performansını tek bakışta görünür hale getirerek fiyatlama, kampanya ve kapasite kararlarını hızlandırmak.</p>
+      <h2>AmaÃ§</h2>
+      <p>Havayolu bazlÄ± satÄ±ÅŸ performansÄ±nÄ± tek bakÄ±ÅŸta gÃ¶rÃ¼nÃ¼r hale getirerek fiyatlama, kampanya ve kapasite kararlarÄ±nÄ± hÄ±zlandÄ±rmak.</p>
 
       <h2>Veri Seti</h2>
-      <p>1.2M satır işlem verisi; satış tarihi, kanal, havayolu, hat, tutar ve işlem tipi alanlarından oluşan aylık akış.</p>
+      <p>1.2M satÄ±r iÅŸlem verisi; satÄ±ÅŸ tarihi, kanal, havayolu, hat, tutar ve iÅŸlem tipi alanlarÄ±ndan oluÅŸan aylÄ±k akÄ±ÅŸ.</p>
 
       <h2>KPI'lar</h2>
       <ul>
-        <li>Toplam satış adedi</li>
-        <li>Aylık gelir büyümesi (%)</li>
-        <li>Havayolu pay dağılımı</li>
-        <li>İptal/iadeye göre net performans</li>
+        <li>Toplam satÄ±ÅŸ adedi</li>
+        <li>AylÄ±k gelir bÃ¼yÃ¼mesi (%)</li>
+        <li>Havayolu pay daÄŸÄ±lÄ±mÄ±</li>
+        <li>Ä°ptal/iadeye gÃ¶re net performans</li>
       </ul>
 
-      <h2>Kullanılan Araçlar</h2>
+      <h2>KullanÄ±lan AraÃ§lar</h2>
       <p>Power BI, DAX, SQL, Power Query.</p>
 
-      <h2>Öğrendiklerim</h2>
-      <p>Problem net tanımlandığında dashboard bir rapor değil karar motoruna dönüşüyor. En güçlü içgörü, üst metrik yerine alt kırılım değişimlerini erken yakalamaktan geliyor.</p>
+      <h2>Ã–ÄŸrendiklerim</h2>
+      <p>Problem net tanÄ±mlandÄ±ÄŸÄ±nda dashboard bir rapor deÄŸil karar motoruna dÃ¶nÃ¼ÅŸÃ¼yor. En gÃ¼Ã§lÃ¼ iÃ§gÃ¶rÃ¼, Ã¼st metrik yerine alt kÄ±rÄ±lÄ±m deÄŸiÅŸimlerini erken yakalamaktan geliyor.</p>
 
-      <a class="post-home-link" href="../index.html#raporlar">Analiz & Raporlara dön</a>
+      <a class="post-home-link" href="../index.html#raporlar">Analiz & Raporlara dÃ¶n</a>
     </article>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Nebi Şeker</p>
+    <p>Â© <span id="year"></span> Nebi Åeker</p>
     <div class="footer-links">
       <a href="/rss.xml" target="_blank" rel="noreferrer">RSS</a>
       <a href="/sitemap.xml" target="_blank" rel="noreferrer">Sitemap</a>
@@ -88,3 +90,4 @@
   <script src="../script.js"></script>
 </body>
 </html>
+

@@ -3,6 +3,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 const menuToggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
+const navLinks = menu ? Array.from(menu.querySelectorAll("a")) : [];
 
 if (menuToggle && menu) {
   menuToggle.addEventListener("click", () => {
@@ -17,6 +18,44 @@ if (menuToggle && menu) {
     });
   });
 }
+
+const setActiveNav = () => {
+  if (!navLinks.length) return;
+  const path = window.location.pathname.replace(/\/+$/, "");
+  const hash = window.location.hash;
+
+  const isBlogPage = /\/blog(\/|$)/.test(path);
+  const isReportPage = /\/reports(\/|$)/.test(path);
+  const isCertificatePage = /\/certificates(\/|$)/.test(path);
+  const isHomePath = /\/$|\/index\.html$/.test(path);
+
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    link.classList.remove("active");
+
+    if (hash && isHomePath && href === hash) {
+      link.classList.add("active");
+      return;
+    }
+
+    if (isBlogPage && /(^|\/)index\.html$/.test(href) && !href.includes("#")) {
+      link.classList.add("active");
+      return;
+    }
+
+    if (isReportPage && href.includes("#raporlar")) {
+      link.classList.add("active");
+      return;
+    }
+
+    if (isCertificatePage && href.includes("#sertifikalar")) {
+      link.classList.add("active");
+    }
+  });
+};
+
+setActiveNav();
+window.addEventListener("hashchange", setActiveNav);
 
 const sections = document.querySelectorAll(".reveal");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

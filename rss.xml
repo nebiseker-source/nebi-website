@@ -3,49 +3,49 @@
   <channel>
     <title>Nebi Şeker Blog</title>
     <link>https://nebi-website.pages.dev/blog/</link>
-    <description>İş analizi, veri bilimi ve ürün geliştirme odaklı yazılar.</description>
+    <description>Dijital Liderlik Akademisi 2026 transkriptlerinden derlenen kapsamlı yazılar.</description>
     <language>tr-TR</language>
-    <lastBuildDate>Mon, 16 Feb 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://nebi-website.pages.dev/rss.xml" rel="self" type="application/rss+xml" />
 
     <item>
-      <title>Havayolu Satış Tahmini Nasıl Yaptım?</title>
-      <link>https://nebi-website.pages.dev/blog/havayolu-satis-tahmini-nasil-yaptim.html</link>
-      <guid>https://nebi-website.pages.dev/blog/havayolu-satis-tahmini-nasil-yaptim.html</guid>
-      <pubDate>Mon, 16 Feb 2026 09:00:00 GMT</pubDate>
-      <description>Problem, metrik ve insight odaklı forecasting vaka notu.</description>
+      <title>AI-First Karar Mimarisi: Tool Adoption'dan Sistem Tasarımına Geçiş</title>
+      <link>https://nebi-website.pages.dev/blog/ai-first-karar-mimarisi-ders-notlari.html</link>
+      <guid>https://nebi-website.pages.dev/blog/ai-first-karar-mimarisi-ders-notlari.html</guid>
+      <pubDate>Wed, 18 Feb 2026 09:00:00 GMT</pubDate>
+      <description>Karar zinciri, otonomi seviyesi ve human-in-the-loop tasarımına dair kapsamlı not.</description>
     </item>
 
     <item>
-      <title>Cloudflare Pages ile Yayınlama: Teknik ve Analitik Kontrol Listesi</title>
-      <link>https://nebi-website.pages.dev/blog/cloudflare-pages-ile-yayinlama.html</link>
-      <guid>https://nebi-website.pages.dev/blog/cloudflare-pages-ile-yayinlama.html</guid>
-      <pubDate>Mon, 16 Feb 2026 09:00:00 GMT</pubDate>
-      <description>Statik site yayınında deploy, SEO ve ölçümleme için temel adımlar.</description>
+      <title>AI Çağında KPI ve Ölçüm Olgunluğu: Output'tan Outcome'a</title>
+      <link>https://nebi-website.pages.dev/blog/ai-caginda-kpi-ve-olcum-olgunlugu.html</link>
+      <guid>https://nebi-website.pages.dev/blog/ai-caginda-kpi-ve-olcum-olgunlugu.html</guid>
+      <pubDate>Wed, 18 Feb 2026 09:10:00 GMT</pubDate>
+      <description>KPI hiyerarşisi ve metrik tasarımıyla davranış odaklı ölçüm modeli.</description>
     </item>
 
     <item>
-      <title>Git/GitHub'da Upstream Nedir ve Takım Akışını Neden Korur?</title>
-      <link>https://nebi-website.pages.dev/blog/git-github-upstream-nedir.html</link>
-      <guid>https://nebi-website.pages.dev/blog/git-github-upstream-nedir.html</guid>
-      <pubDate>Sun, 15 Feb 2026 10:00:00 GMT</pubDate>
-      <description>Origin-upstream ilişkisini doğru kurmanın pratik etkileri.</description>
+      <title>Agentic World ve API-First Ürün Stratejisi</title>
+      <link>https://nebi-website.pages.dev/blog/agentic-world-ve-api-first-urun-stratejisi.html</link>
+      <guid>https://nebi-website.pages.dev/blog/agentic-world-ve-api-first-urun-stratejisi.html</guid>
+      <pubDate>Wed, 18 Feb 2026 09:20:00 GMT</pubDate>
+      <description>Kullanıcıdan ajana kayan etkileşim modelinde ürün mimarisi öncelikleri.</description>
     </item>
 
     <item>
-      <title>Mobil Navbar ve Hamburger UX: Dönüşümü Etkileyen 8 Kural</title>
-      <link>https://nebi-website.pages.dev/blog/mobil-navbar-hamburger-ux.html</link>
-      <guid>https://nebi-website.pages.dev/blog/mobil-navbar-hamburger-ux.html</guid>
-      <pubDate>Sat, 14 Feb 2026 10:00:00 GMT</pubDate>
-      <description>Mobil menü tasarımında erişilebilirlik ve hız odaklı temel UX prensipleri.</description>
+      <title>RAG ve Veri Hattı Kalitesi: Modelden Önce Veriyi Yönetmek</title>
+      <link>https://nebi-website.pages.dev/blog/rag-ve-veri-hatti-kalitesi.html</link>
+      <guid>https://nebi-website.pages.dev/blog/rag-ve-veri-hatti-kalitesi.html</guid>
+      <pubDate>Wed, 18 Feb 2026 09:30:00 GMT</pubDate>
+      <description>Retrieval stratejisi, güncellik ve erişim kontrolü odaklı RAG notları.</description>
     </item>
 
     <item>
-      <title>İş Analistleri için KPI Hiyerarşisi: Veri Bilimi Projelerinde Ölçüm Tasarımı</title>
-      <link>https://nebi-website.pages.dev/blog/is-analistleri-icin-kpi-hiyerarsisi.html</link>
-      <guid>https://nebi-website.pages.dev/blog/is-analistleri-icin-kpi-hiyerarsisi.html</guid>
-      <pubDate>Fri, 13 Feb 2026 10:00:00 GMT</pubDate>
-      <description>North Star, ana KPI ve alt KPI katmanlarıyla metrik mimarisi kurma rehberi.</description>
+      <title>AI Governance: Model Riski, Explainability ve Sorumluluk Zinciri</title>
+      <link>https://nebi-website.pages.dev/blog/ai-governance-model-riski-ve-sorumluluk.html</link>
+      <guid>https://nebi-website.pages.dev/blog/ai-governance-model-riski-ve-sorumluluk.html</guid>
+      <pubDate>Wed, 18 Feb 2026 09:40:00 GMT</pubDate>
+      <description>Drift, bias, hallucination riskleri ve kurumsal governance tasarımı.</description>
     </item>
   </channel>
 </rss>

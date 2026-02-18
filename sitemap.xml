@@ -2,61 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nebi-website.pages.dev/</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://nebi-website.pages.dev/blog/</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nebi-website.pages.dev/blog/cloudflare-pages-ile-yayinlama.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <loc>https://nebi-website.pages.dev/blog/ai-first-karar-mimarisi-ders-notlari.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nebi-website.pages.dev/blog/git-github-upstream-nedir.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <loc>https://nebi-website.pages.dev/blog/ai-caginda-kpi-ve-olcum-olgunlugu.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nebi-website.pages.dev/blog/mobil-navbar-hamburger-ux.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <loc>https://nebi-website.pages.dev/blog/agentic-world-ve-api-first-urun-stratejisi.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nebi-website.pages.dev/blog/is-analistleri-icin-kpi-hiyerarsisi.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <loc>https://nebi-website.pages.dev/blog/rag-ve-veri-hatti-kalitesi.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nebi-website.pages.dev/blog/havayolu-satis-tahmini-nasil-yaptim.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <loc>https://nebi-website.pages.dev/blog/ai-governance-model-riski-ve-sorumluluk.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://nebi-website.pages.dev/reports/havayolu-talep-tahmini.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://nebi-website.pages.dev/reports/powerbi-havayolu-satis.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://nebi-website.pages.dev/reports/sheets-acente-performans.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

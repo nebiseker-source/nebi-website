@@ -1,0 +1,15 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" rx="20" fill="#141920"/>
+  <rect x="40" y="40" width="1120" height="550" rx="16" fill="#1B222D" stroke="#2F3A4A"/>
+  <text x="86" y="130" fill="#E4C38D" font-size="40" font-family="Manrope, Arial" font-weight="700">AI-First Karar Mimarisi</text>
+  <text x="86" y="172" fill="#AFB9C8" font-size="24" font-family="Manrope, Arial">Dijital Liderlik Akademisi 2026</text>
+  <rect x="90" y="230" width="240" height="90" rx="12" fill="#253042"/>
+  <rect x="390" y="230" width="240" height="90" rx="12" fill="#2A3A4F"/>
+  <rect x="690" y="190" width="240" height="70" rx="12" fill="#31445D"/>
+  <rect x="690" y="280" width="240" height="70" rx="12" fill="#31445D"/>
+  <rect x="690" y="370" width="240" height="70" rx="12" fill="#31445D"/>
+  <rect x="990" y="230" width="130" height="90" rx="12" fill="#253042"/>
+  <path d="M330 275H380" stroke="#E4C38D" stroke-width="3"/>
+  <path d="M630 275H680" stroke="#E4C38D" stroke-width="3"/>
+  <path d="M930 275H980" stroke="#E4C38D" stroke-width="3"/>
+</svg>

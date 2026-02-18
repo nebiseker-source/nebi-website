@@ -513,6 +513,25 @@ p:last-child {
   gap: 8px;
 }
 
+.cert-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.cert-card {
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-card);
+  background: linear-gradient(165deg, rgba(250, 246, 238, 0.03), rgba(22, 25, 30, 0.72));
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+}
+
+.cert-card h3 {
+  margin: 0 0 var(--space-3);
+  font-size: 1.08rem;
+}
+
 .project-lanes-wrap {
   margin-top: var(--space-8);
   padding-top: var(--space-6);

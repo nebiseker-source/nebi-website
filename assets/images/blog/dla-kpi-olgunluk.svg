@@ -1,14 +1,22 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
-  <rect width="1200" height="630" rx="20" fill="#141920"/>
-  <rect x="40" y="40" width="1120" height="550" rx="16" fill="#1B222D" stroke="#2F3A4A"/>
-  <text x="86" y="130" fill="#E4C38D" font-size="40" font-family="Manrope, Arial" font-weight="700">KPI ve Ölçüm Olgunluğu</text>
-  <text x="86" y="172" fill="#AFB9C8" font-size="24" font-family="Manrope, Arial">Dijital Liderlik Akademisi 2026</text>
-  <rect x="90" y="260" width="220" height="72" rx="12" fill="#263448"/>
-  <rect x="350" y="260" width="220" height="72" rx="12" fill="#2A3D56"/>
-  <rect x="610" y="260" width="220" height="72" rx="12" fill="#314A67"/>
-  <rect x="870" y="260" width="220" height="72" rx="12" fill="#385779"/>
-  <path d="M310 296H340" stroke="#E4C38D" stroke-width="3"/>
-  <path d="M570 296H600" stroke="#E4C38D" stroke-width="3"/>
-  <path d="M830 296H860" stroke="#E4C38D" stroke-width="3"/>
-  <text x="102" y="466" fill="#9FAABD" font-size="22" font-family="Manrope, Arial">Analytics → Prediction → Recommendation → Automation</text>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" rx="20" fill="#1b2430"/>
+  <rect x="32" y="32" width="1136" height="566" rx="16" fill="#232f3e" stroke="#4f6580"/>
+  <text x="76" y="116" fill="#f3f7fb" font-size="44" font-family="Arial" font-weight="700">KPI ve Olcum Olgunlugu</text>
+  <text x="76" y="158" fill="#bdd0e4" font-size="24" font-family="Arial">Dijital Liderlik Akademisi 2026</text>
+
+  <rect x="90" y="250" width="220" height="84" rx="12" fill="#32465f"/>
+  <text x="140" y="300" fill="#fff" font-size="24" font-family="Arial" font-weight="700">Analytics</text>
+  <rect x="350" y="250" width="220" height="84" rx="12" fill="#3a5372"/>
+  <text x="398" y="300" fill="#fff" font-size="24" font-family="Arial" font-weight="700">Prediction</text>
+  <rect x="610" y="250" width="220" height="84" rx="12" fill="#425f83"/>
+  <text x="635" y="300" fill="#fff" font-size="24" font-family="Arial" font-weight="700">Recommendation</text>
+  <rect x="870" y="250" width="220" height="84" rx="12" fill="#4a6d95"/>
+  <text x="918" y="300" fill="#fff" font-size="24" font-family="Arial" font-weight="700">Automation</text>
+
+  <path d="M310 292H340" stroke="#ffd28a" stroke-width="4"/>
+  <path d="M570 292H600" stroke="#ffd28a" stroke-width="4"/>
+  <path d="M830 292H860" stroke="#ffd28a" stroke-width="4"/>
+
+  <rect x="90" y="470" width="1040" height="96" rx="12" fill="#28384d"/>
+  <text x="120" y="522" fill="#e8f0f8" font-size="24" font-family="Arial" font-weight="700">Output degil, Outcome odakli KPI tasarimi</text>
 </svg>

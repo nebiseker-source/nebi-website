@@ -10,5 +10,6 @@
   <rect x="120" y="416" width="950" height="42" rx="8" fill="#2d3e54"/>
   <path d="M290 250V458M500 250V458M710 250V458M920 250V458" stroke="#6f8daf" stroke-width="2"/>
   <rect x="90" y="500" width="1010" height="64" rx="12" fill="#2f4257"/>
-  <text x="120" y="540" fill="#eaf2fb" font-size="24" font-family="Arial" font-weight="700">Nebi Seker | Business Analyst & Data Scientist</text>
+  <text x="120" y="540" fill="#eaf2fb" font-size="24" font-family="Arial" font-weight="700">Nebi Seker | Business Analyst &amp; Data Scientist</text>
 </svg>
+

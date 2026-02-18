@@ -11,5 +11,6 @@
   <path d="M320 290H378" stroke="#f1c98b" stroke-width="4"/>
   <path d="M620 290H678" stroke="#f1c98b" stroke-width="4"/>
   <rect x="90" y="500" width="1010" height="64" rx="12" fill="#2f4257"/>
-  <text x="120" y="540" fill="#eaf2fb" font-size="24" font-family="Arial" font-weight="700">Nebi Seker | Business Analyst & Data Scientist</text>
+  <text x="120" y="540" fill="#eaf2fb" font-size="24" font-family="Arial" font-weight="700">Nebi Seker | Business Analyst &amp; Data Scientist</text>
 </svg>
+

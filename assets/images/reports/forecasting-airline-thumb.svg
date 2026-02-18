@@ -1,18 +1,14 @@
-<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700">
-      <stop stop-color="#1B222C"/>
-      <stop offset="1" stop-color="#0E1319"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="700" fill="url(#bg)"/>
-  <rect x="80" y="70" width="1040" height="560" rx="20" fill="#141A22" stroke="#2A3240" stroke-width="2"/>
-  <path d="M120 520C210 480 285 500 370 430C455 360 520 390 610 320C700 250 790 280 870 220C950 160 1010 170 1080 130" stroke="#D6B273" stroke-width="7" stroke-linecap="round"/>
-  <circle cx="370" cy="430" r="9" fill="#D6B273"/>
-  <circle cx="610" cy="320" r="9" fill="#D6B273"/>
-  <circle cx="870" cy="220" r="9" fill="#D6B273"/>
-  <rect x="120" y="120" width="300" height="110" rx="12" fill="#1F2734"/>
-  <rect x="440" y="120" width="300" height="110" rx="12" fill="#202938"/>
-  <rect x="760" y="120" width="300" height="110" rx="12" fill="#202938"/>
-  <text x="120" y="580" fill="#F4F1EA" font-family="Manrope, Arial, sans-serif" font-size="36" font-weight="700">Forecasting Dashboard</text>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" rx="20" fill="#1d2733"/>
+  <rect x="32" y="32" width="1136" height="566" rx="16" fill="#253240" stroke="#516a85"/>
+  <text x="76" y="112" fill="#f4f8fc" font-size="42" font-family="Arial" font-weight="700">Forecasting Dashboard</text>
+  <text x="76" y="152" fill="#b8cbe0" font-size="23" font-family="Arial">Rapor onizleme</text>
+  <rect x="90" y="220" width="1010" height="260" rx="16" fill="#2b3d52"/>
+  <path d="M130 430L230 390L330 404L430 350L530 360L630 318L730 330L830 282L930 296L1030 250" stroke="#f1c98b" stroke-width="5" fill="none"/>
+  <path d="M130 430L230 400L330 414L430 380L530 396L630 366L730 378L830 352L930 362L1030 338" stroke="#88a9cd" stroke-width="3" fill="none" stroke-dasharray="8 7"/>
+  <rect x="130" y="248" width="200" height="64" rx="12" fill="#334960"/>
+  <rect x="350" y="248" width="200" height="64" rx="12" fill="#3f5a78"/>
+  <rect x="570" y="248" width="200" height="64" rx="12" fill="#4a6a8d"/>
+  <rect x="90" y="500" width="1010" height="64" rx="12" fill="#2f4257"/>
+  <text x="120" y="540" fill="#eaf2fb" font-size="24" font-family="Arial" font-weight="700">Nebi Seker | Business Analyst & Data Scientist</text>
 </svg>

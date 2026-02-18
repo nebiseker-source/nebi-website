@@ -1,20 +1,14 @@
-<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700">
-      <stop stop-color="#1C232D"/>
-      <stop offset="1" stop-color="#0F141B"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="700" fill="url(#bg)"/>
-  <rect x="80" y="70" width="1040" height="560" rx="20" fill="#151B23" stroke="#2B3341" stroke-width="2"/>
-  <rect x="120" y="120" width="960" height="60" rx="10" fill="#202937"/>
-  <g opacity="0.9">
-    <rect x="120" y="210" width="960" height="52" rx="8" fill="#1D2532"/>
-    <rect x="120" y="274" width="960" height="52" rx="8" fill="#1A2230"/>
-    <rect x="120" y="338" width="960" height="52" rx="8" fill="#1D2532"/>
-    <rect x="120" y="402" width="960" height="52" rx="8" fill="#1A2230"/>
-    <rect x="120" y="466" width="960" height="52" rx="8" fill="#1D2532"/>
-  </g>
-  <rect x="140" y="128" width="220" height="44" rx="8" fill="#D6B273" fill-opacity="0.28"/>
-  <text x="120" y="570" fill="#F4F1EA" font-family="Manrope, Arial, sans-serif" font-size="36" font-weight="700">Sheets / Excel Analiz</text>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" rx="20" fill="#1d2733"/>
+  <rect x="32" y="32" width="1136" height="566" rx="16" fill="#253240" stroke="#516a85"/>
+  <text x="76" y="112" fill="#f4f8fc" font-size="42" font-family="Arial" font-weight="700">Sheets Dashboard</text>
+  <text x="76" y="152" fill="#b8cbe0" font-size="23" font-family="Arial">Rapor onizleme</text>
+  <rect x="90" y="220" width="1010" height="260" rx="16" fill="#2b3d52"/>
+  <rect x="120" y="250" width="950" height="54" rx="8" fill="#3f5a78"/>
+  <rect x="120" y="316" width="950" height="42" rx="8" fill="#31465f"/>
+  <rect x="120" y="366" width="950" height="42" rx="8" fill="#2f4259"/>
+  <rect x="120" y="416" width="950" height="42" rx="8" fill="#2d3e54"/>
+  <path d="M290 250V458M500 250V458M710 250V458M920 250V458" stroke="#6f8daf" stroke-width="2"/>
+  <rect x="90" y="500" width="1010" height="64" rx="12" fill="#2f4257"/>
+  <text x="120" y="540" fill="#eaf2fb" font-size="24" font-family="Arial" font-weight="700">Nebi Seker | Business Analyst & Data Scientist</text>
 </svg>

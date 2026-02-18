@@ -1,25 +1,15 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" rx="20" fill="#1b2430"/>
-  <rect x="32" y="32" width="1136" height="566" rx="16" fill="#232f3e" stroke="#4f6580"/>
-  <text x="76" y="116" fill="#f3f7fb" font-size="44" font-family="Arial" font-weight="700">AI-First Karar Mimarisi</text>
-  <text x="76" y="158" fill="#bdd0e4" font-size="24" font-family="Arial">Dijital Liderlik Akademisi 2026</text>
-
-  <rect x="90" y="230" width="250" height="120" rx="12" fill="#32465f"/>
-  <text x="128" y="298" fill="#ffffff" font-size="24" font-family="Arial" font-weight="700">Veri Girisi</text>
-
-  <rect x="410" y="230" width="250" height="120" rx="12" fill="#3a5372"/>
-  <text x="448" y="298" fill="#ffffff" font-size="24" font-family="Arial" font-weight="700">Model Ciktisi</text>
-
-  <rect x="730" y="188" width="250" height="74" rx="12" fill="#425f83"/>
-  <text x="770" y="234" fill="#ffffff" font-size="21" font-family="Arial" font-weight="700">Karar Destek</text>
-  <rect x="730" y="276" width="250" height="74" rx="12" fill="#425f83"/>
-  <text x="776" y="322" fill="#ffffff" font-size="21" font-family="Arial" font-weight="700">Yari Otonom</text>
-  <rect x="730" y="364" width="250" height="74" rx="12" fill="#425f83"/>
-  <text x="790" y="410" fill="#ffffff" font-size="21" font-family="Arial" font-weight="700">Tam Otonom</text>
-
-  <path d="M340 290H400" stroke="#ffd28a" stroke-width="4"/>
-  <path d="M660 290H720" stroke="#ffd28a" stroke-width="4"/>
-
-  <rect x="90" y="480" width="1040" height="86" rx="12" fill="#28384d"/>
-  <text x="124" y="532" fill="#e8f0f8" font-size="24" font-family="Arial" font-weight="700">Human-in-the-loop + Risk Esigi + Rollback</text>
+  <rect width="1200" height="630" rx="20" fill="#1d2733"/>
+  <rect x="32" y="32" width="1136" height="566" rx="16" fill="#253240" stroke="#516a85"/>
+  <text x="76" y="112" fill="#f4f8fc" font-size="42" font-family="Arial" font-weight="700">AI-First Karar Mimarisi</text>
+  <text x="76" y="152" fill="#b8cbe0" font-size="23" font-family="Arial">Dijital Liderlik Akademisi 2026</text>
+  <rect x="90" y="235" width="230" height="110" rx="14" fill="#334960"/>
+  <rect x="390" y="235" width="230" height="110" rx="14" fill="#3f5a78"/>
+  <rect x="690" y="188" width="230" height="74" rx="14" fill="#4a6a8d"/>
+  <rect x="690" y="278" width="230" height="74" rx="14" fill="#4a6a8d"/>
+  <rect x="690" y="368" width="230" height="74" rx="14" fill="#4a6a8d"/>
+  <path d="M320 290H378" stroke="#f1c98b" stroke-width="4"/>
+  <path d="M620 290H678" stroke="#f1c98b" stroke-width="4"/>
+  <rect x="90" y="500" width="1010" height="64" rx="12" fill="#2f4257"/>
+  <text x="120" y="540" fill="#eaf2fb" font-size="24" font-family="Arial" font-weight="700">Nebi Seker | Business Analyst & Data Scientist</text>
 </svg>

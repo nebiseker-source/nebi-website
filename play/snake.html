@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake | Nebi Şeker</title>
+  <meta name="description" content="Nokia tarzı klasik Snake oyunu." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nebi-website.pages.dev/play/snake.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Snake | Nebi Şeker" />
+  <meta property="og:description" content="Canvas ile geliştirilmiş klasik yılan oyunu." />
+  <meta property="og:url" content="https://nebi-website.pages.dev/play/snake.html" />
+  <meta property="og:image" content="https://nebi-website.pages.dev/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Snake | Nebi Şeker" />
+  <meta name="twitter:description" content="Nokia tarzı Snake oyunu." />
+  <meta name="twitter:image" content="https://nebi-website.pages.dev/assets/og.png" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../index.html#anasayfa">
+      <span class="brand-mark">NS</span>
+      <span class="brand-name">Nebi Şeker</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menü</button>
+    <nav class="menu" id="site-menu">
+      <a href="../index.html#hakkimda">Hakkımda</a>
+      <a href="../index.html#projeler">Projeler</a>
+      <a href="../index.html#raporlar">Raporlar</a>
+      <a href="../blog/index.html">Blog</a>
+      <a class="active" href="index.html">Oyunlar</a>
+      <a href="../index.html#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <main class="play-main">
+    <section class="game-wrap reveal">
+      <div class="section-header">
+        <h1>Snake</h1>
+        <p>Klasik Nokia tarzı yılan oyunu. Yön tuşlarıyla hareket et, elmayı topla.</p>
+      </div>
+
+      <canvas id="snakeGame" class="game-canvas" width="600" height="600" aria-label="Snake oyun alanı"></canvas>
+
+      <div class="game-stats">
+        <div class="game-stat">Skor: <strong id="snakeScore">0</strong></div>
+        <div class="game-stat">En Yüksek: <strong id="snakeBest">0</strong></div>
+        <div class="game-stat">Hız: <strong id="snakeSpeed">Orta</strong></div>
+      </div>
+
+      <div class="game-controls">
+        <div class="game-buttons">
+          <button id="startSnakeBtn" class="btn btn-primary" type="button">Başlat</button>
+          <button id="resetSnakeBtn" class="btn btn-ghost" type="button">Sıfırla</button>
+        </div>
+        <div class="mobile-pad" aria-hidden="true">
+          <button class="pad-btn" id="snakeUpBtn" type="button">▲</button>
+          <button class="pad-btn" id="snakeLeftBtn" type="button">◀</button>
+          <button class="pad-btn" id="snakeRightBtn" type="button">▶</button>
+          <button class="pad-btn" id="snakeDownBtn" type="button">▼</button>
+        </div>
+      </div>
+
+      <p id="snakeMessage" class="case-line">Kontrol: Yön tuşları (↑ ↓ ← →).</p>
+      <div class="project-actions">
+        <a class="btn btn-link" href="index.html">Diğer oyunlara dön</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nebi Şeker</p>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="snake.js"></script>
+</body>
+</html>

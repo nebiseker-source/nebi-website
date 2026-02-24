@@ -10,7 +10,7 @@
   --color-accent-strong: #2f4f76;
   --font-sans: "Manrope", sans-serif;
   --font-serif: "Manrope", sans-serif;
-  --fs-900: clamp(2.4rem, 5vw, 4.4rem);
+  --fs-900: clamp(2rem, 4.2vw, 3.4rem);
   --fs-800: clamp(1.9rem, 3.2vw, 2.6rem);
   --fs-700: clamp(1.35rem, 2.2vw, 1.85rem);
   --fs-600: 1.1rem;
@@ -234,6 +234,11 @@ main > section {
   gap: var(--space-4);
 }
 
+.hero-titles {
+  display: grid;
+  gap: 8px;
+}
+
 .avatar {
   width: clamp(68px, 10vw, 96px);
   height: clamp(68px, 10vw, 96px);
@@ -246,12 +251,20 @@ main > section {
 
 h1 {
   margin: 0;
-  max-width: 14ch;
+  max-width: 12ch;
   font-family: var(--font-serif);
   font-size: var(--fs-900);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.06;
   letter-spacing: 0.01em;
+}
+
+.hero-role {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: clamp(0.94rem, 1.35vw, 1.08rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .subtitle {
@@ -295,6 +308,21 @@ h1 {
   border: 1px solid var(--stroke);
   color: var(--text);
   background: rgba(255, 255, 255, 0.65);
+}
+
+.btn-link {
+  border: 0;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: var(--accent-strong);
+  background: transparent;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.btn-link:hover {
+  transform: none;
+  color: var(--accent);
 }
 
 .panel {

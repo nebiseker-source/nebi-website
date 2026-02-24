@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebi Şeker - CV</title>
+  <style>
+    :root {
+      --text: #111827;
+      --muted: #4b5563;
+      --accent: #1f4b7a;
+      --line: #d1d5db;
+      --bg: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Arial", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+      font-size: 11.5pt;
+    }
+    .page {
+      width: 210mm;
+      margin: 0 auto;
+      padding: 14mm 14mm 12mm;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24pt;
+      line-height: 1.1;
+      letter-spacing: 0.2px;
+    }
+    .role {
+      margin-top: 4px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 12pt;
+    }
+    .contact {
+      text-align: right;
+      font-size: 10.5pt;
+      color: var(--muted);
+      min-width: 280px;
+    }
+    .contact div { margin-bottom: 3px; }
+    h2 {
+      margin: 16px 0 8px;
+      font-size: 12.5pt;
+      color: var(--accent);
+      letter-spacing: 0.2px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 4px;
+    }
+    p { margin: 0 0 8px; }
+    .item { margin: 0 0 12px; }
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 10.5pt;
+      margin-bottom: 4px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    li { margin-bottom: 4px; }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 10pt;
+      color: #1f2937;
+    }
+    @media print {
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div>
+        <h1>Nebi Şeker</h1>
+        <div class="role">Business Analyst & Data Scientist</div>
+      </div>
+      <div class="contact">
+        <div>İstanbul, Türkiye</div>
+        <div>nebiseker@gmail.com</div>
+        <div>linkedin.com/in/nebiseker</div>
+        <div>github.com/nebiseker-source</div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Profesyonel Özet</h2>
+      <p>
+        Operasyon, entegrasyon ve veri odaklı raporlama süreçlerinde 5+ yıllık deneyime sahip bir Business Analyst'im.
+        API entegrasyonları, performans analitiği ve karar destek raporları üzerinden süreç verimliliğini artırmaya odaklanıyorum.
+        Excel (PivotTable, Power Query, VBA) ve Power BI ile ölçülebilir iş çıktıları üretiyorum.
+      </p>
+    </section>
+
+    <section>
+      <h2>Deneyim</h2>
+
+      <article class="item">
+        <div class="item-head">
+          <div>Sr. Agency/Flight Operation Specialist - obilet.com</div>
+          <div>Tem 2023 - Devam</div>
+        </div>
+        <div class="meta">İstanbul (Hibrit)</div>
+        <ul>
+          <li>Uçak ve acente operasyonlarında sistem kurulum, süreç analizi ve optimizasyon çalışmaları yürüttüm.</li>
+          <li>API entegrasyon süreçlerini (dokümantasyon, test, canlıya geçiş) uçtan uca yönettim.</li>
+          <li>Aylık 20+ rapor yapısını kurarak manuel işlem oranını %60 azalttım.</li>
+          <li>Satış, hakediş ve performans analizlerini Power BI ve Excel ile karar destek raporlarına dönüştürdüm.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <div>Agency/Flight Operation Specialist - obilet.com</div>
+          <div>Oca 2022 - Tem 2023</div>
+        </div>
+        <div class="meta">İstanbul (Hibrit)</div>
+        <ul>
+          <li>Acente süreç koordinasyonu, ödeme raporlaması ve finansal takip operasyonlarını yönettim.</li>
+          <li>Acentelerin sisteme dahil edilmesi, sözleşme ve başvuru süreçlerinde sorumluluk aldım.</li>
+          <li>Süreç iyileştirme ve yeni ekip üyelerinin eğitim/onboarding faaliyetlerine katkı sundum.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <div>Corporate IMS Support Specialist / Assistant - obilet.com</div>
+          <div>Ara 2020 - Ara 2021</div>
+        </div>
+        <div class="meta">İstanbul</div>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <div>Veri Uzmanı - INTERPRESS Medya Takip Ajansı</div>
+          <div>Tem 2019 - Mar 2020</div>
+        </div>
+        <div class="meta">İstanbul</div>
+        <ul>
+          <li>Yazılı ve dijital medya görünürlüğü analizleri ve düzenli raporlama süreçlerinde görev aldım.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <div>Risk Uzmanı - Dünya Varlık Yönetim A.Ş.</div>
+          <div>Eyl 2017 - Oca 2019</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="two-col">
+      <div>
+        <h2>Eğitim</h2>
+        <article class="item">
+          <div class="item-head"><div>Yıldız Teknik Üniversitesi</div><div>2025 - Devam</div></div>
+          <div class="meta">Yüksek Lisans, Endüstri Mühendisliği</div>
+        </article>
+        <article class="item">
+          <div class="item-head"><div>Atatürk Üniversitesi</div><div>2020 - 2022</div></div>
+          <div class="meta">Önlisans, Bilgisayar Programcılığı</div>
+        </article>
+        <article class="item">
+          <div class="item-head"><div>İstanbul Üniversitesi</div><div>2014 - 2018</div></div>
+          <div class="meta">Lisans, Sinema</div>
+        </article>
+      </div>
+      <div>
+        <h2>Yetkinlikler</h2>
+        <div class="tags">
+          <span class="tag">Business Analysis</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Excel VBA</span>
+          <span class="tag">Power Query</span>
+          <span class="tag">API Integration</span>
+          <span class="tag">Process Optimization</span>
+          <span class="tag">Reporting</span>
+          <span class="tag">Forecasting</span>
+          <span class="tag">Stakeholder Management</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

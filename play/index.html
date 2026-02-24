@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oyunlar | Nebi Şeker</title>
+  <meta name="description" content="Nebi Şeker portfolyosu mini oyun alanı: Uçuş Akışı Mini Game." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nebi-website.pages.dev/play/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Oyunlar | Nebi Şeker" />
+  <meta property="og:description" content="Canvas tabanlı mini oyun: yakıt topla, türbülanstan kaçın." />
+  <meta property="og:url" content="https://nebi-website.pages.dev/play/" />
+  <meta property="og:image" content="https://nebi-website.pages.dev/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Oyunlar | Nebi Şeker" />
+  <meta name="twitter:description" content="Uçuş Akışı Mini Game ile etkileşimli deneyim." />
+  <meta name="twitter:image" content="https://nebi-website.pages.dev/assets/og.png" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-a"></div>
+  <div class="bg-shape bg-shape-b"></div>
+
+  <header class="topbar">
+    <a class="brand" href="../index.html#anasayfa">
+      <span class="brand-mark">NS</span>
+      <span class="brand-name">Nebi Şeker</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menü</button>
+    <nav class="menu" id="site-menu">
+      <a href="../index.html#hakkimda">Hakkımda</a>
+      <a href="../index.html#projeler">Projeler</a>
+      <a href="../index.html#raporlar">Raporlar</a>
+      <a href="../index.html#sertifikalar">Sertifikalar</a>
+      <a href="../blog/index.html">Blog</a>
+      <a class="active" href="index.html">Oyunlar</a>
+      <a href="../index.html#resume">Resume</a>
+      <a href="../index.html#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <main class="play-main">
+    <section class="game-wrap reveal">
+      <div class="section-header">
+        <h1>Uçuş Akışı Mini Game</h1>
+        <p>Sağa-sola hareket ederek yakıt bonuslarını topla, türbülanstan kaçın. 60 saniyede en yüksek skoru yap.</p>
+      </div>
+
+      <canvas id="flightGame" class="game-canvas" width="900" height="420" aria-label="Uçuş akışı mini oyun alanı"></canvas>
+
+      <div class="game-stats">
+        <div class="game-stat">Skor: <strong id="gameScore">0</strong></div>
+        <div class="game-stat">Can: <strong id="gameLives">3</strong></div>
+        <div class="game-stat">Süre: <strong id="gameTime">60</strong>s</div>
+      </div>
+
+      <div class="game-controls">
+        <div class="game-buttons">
+          <button id="startGameBtn" class="btn btn-primary" type="button">Oyunu Başlat</button>
+          <button id="resetGameBtn" class="btn btn-ghost" type="button">Sıfırla</button>
+        </div>
+        <div class="mobile-pad" aria-hidden="true">
+          <button class="pad-btn" id="moveLeftBtn" type="button">◀</button>
+          <button class="pad-btn" id="moveRightBtn" type="button">▶</button>
+        </div>
+      </div>
+      <p id="gameMessage" class="case-line">Kontrol: Klavyede sol/sağ ok tuşları veya mobilde butonlar.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nebi Şeker</p>
+    <div class="footer-links">
+      <a href="/rss.xml" target="_blank" rel="noreferrer">RSS</a>
+      <a href="/sitemap.xml" target="_blank" rel="noreferrer">Sitemap</a>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="play.js"></script>
+</body>
+</html>

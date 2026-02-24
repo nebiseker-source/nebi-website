@@ -1,0 +1,4 @@
+Nebi Seker - Rapor Ozeti Placeholder
+
+Bu dosya, rapor indir event tracking akisini test etmek icin eklendi.
+Ileride gercek rapor dosyasiyla degistirebilirsin.

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Lite | Nebi Şeker</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">NS</span>
+      <span class="brand-name">Nebi Şeker</span>
+    </a>
+    <nav class="menu">
+      <a href="../index.html">Ana Sayfa</a>
+      <a href="../play/index.html">Oyunlar</a>
+    </nav>
+  </header>
+
+  <main class="play-main">
+    <section class="game-wrap">
+      <div class="section-header">
+        <h1>Admin Lite (JSON)</h1>
+        <p>Local override ile içerik denemesi yap. İstersen JSON dışa aktararak repo dosyasına manuel koy.</p>
+      </div>
+      <p class="case-line"><strong>Anahtar:</strong> <code>hero_subtitle</code></p>
+      <textarea id="contentEditor" rows="12" style="width:100%; border:1px solid var(--stroke); border-radius:12px; padding:12px; font:inherit;"></textarea>
+      <div class="hero-actions" style="margin-top:12px;">
+        <button class="btn btn-primary" id="saveLocalBtn" type="button">Local Kaydet</button>
+        <button class="btn btn-ghost" id="clearLocalBtn" type="button">Local Sıfırla</button>
+        <button class="btn btn-link" id="downloadJsonBtn" type="button">JSON İndir</button>
+      </div>
+      <p id="adminMsg" class="case-line"></p>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

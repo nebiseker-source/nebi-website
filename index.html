@@ -54,6 +54,7 @@
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
   <link rel="manifest" href="site.webmanifest" />
+  <link rel="preload" href="assets/data/site-content.json" as="fetch" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -81,6 +82,7 @@
       <a href="#raporlar">Raporlar</a>
       <a href="#sertifikalar">Sertifikalar</a>
       <a href="blog/index.html">Blog</a>
+      <a href="play/index.html">Oyunlar</a>
       <a href="#resume">Resume</a>
       <a href="#iletisim">İletişim</a>
     </nav>
@@ -97,11 +99,11 @@
         </div>
       </div>
       <p class="subtitle">
-        Ürün, operasyon ve veri akışlarını ölçülebilir sistemlere dönüştürerek karar kalitesini artıran çözümler geliştiriyorum.
+        <span data-content-key="hero_subtitle">Ürün, operasyon ve veri akışlarını ölçülebilir sistemlere dönüştürerek karar kalitesini artıran çözümler geliştiriyorum.</span>
       </p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#projeler">Projelerimi İncele</a>
-        <a class="btn btn-ghost" href="assets/Nebi-Seker-CV.pdf" target="_blank" rel="noreferrer">CV İndir</a>
+        <a class="btn btn-primary" id="heroPrimaryCta" href="#projeler" data-track="hero_primary_cta">Projelerimi İncele</a>
+        <a class="btn btn-ghost" href="assets/Nebi-Seker-CV.pdf" target="_blank" rel="noreferrer" data-track="cv_download">CV İndir</a>
         <a class="btn btn-link" href="#iletisim">İletişime Geç</a>
       </div>
       <div class="hero-metrics" aria-hidden="true">
@@ -246,7 +248,7 @@
         <h3 class="subsection-title">Power BI Dashboard'ları</h3>
         <div class="reports-grid">
           <article class="report-card">
-            <img class="report-thumb" src="/assets/images/reports/havayolu-talep-tahmini.svg" alt="Havayolu Talep Tahmini kapak görseli" />
+            <img class="report-thumb" src="/assets/images/reports/havayolu-talep-tahmini.svg" alt="Havayolu Talep Tahmini kapak görseli" loading="lazy" decoding="async" />
             <h4>Havayolu Talep Tahmini</h4>
             <p>Geçmiş satış verileri üzerinden aylık ve güzergâh bazlı talep tahmini yaklaşımı geliştirdim. Sezonluk etkiler ve trend analizleri ile öngörü doğruluğunu artırmayı hedefledim.</p>
             <p class="case-line"><strong>Araçlar:</strong> Forecasting, Time Series, Python, Business Analytics.</p>
@@ -268,7 +270,7 @@
           </article>
 
           <article class="report-card">
-            <img class="report-thumb" src="/assets/images/reports/powerbi-havayolu-satis.svg" alt="Power BI Havayolu Satış kapak görseli" />
+            <img class="report-thumb" src="/assets/images/reports/powerbi-havayolu-satis.svg" alt="Power BI Havayolu Satış kapak görseli" loading="lazy" decoding="async" />
             <h4>Havayolu Satış Performans Dashboard (Power BI)</h4>
             <p>Havayolu bazlı satış adet, ciro ve büyüme oranlarını analiz eden interaktif bir BI dashboard kurguladım. KPI’lar ve filtrelerle hızlı içgörü üretmeyi amaçlıyor.</p>
             <p class="case-line"><strong>Araçlar:</strong> Power BI, DAX, KPI modelleme, BI.</p>
@@ -295,7 +297,7 @@
         <h3 class="subsection-title">Google Sheets / Excel Analizleri</h3>
         <div class="reports-grid reports-grid-single">
           <article class="report-card">
-            <img class="report-thumb" src="/assets/images/reports/sheets-acente-performans.svg" alt="Sheets Acente Performans kapak görseli" />
+            <img class="report-thumb" src="/assets/images/reports/sheets-acente-performans.svg" alt="Sheets Acente Performans kapak görseli" loading="lazy" decoding="async" />
             <h4>SkyTurk Havayolu Satış Raporu (Google Sheets / Excel)</h4>
             <p>SkyTurk havayolu satış adet ve ciro performansını pivot tablolar ve dinamik grafiklerle analiz eden rapor yapısı oluşturdum. Segmentasyon ile güçlü/zayıf performans alanlarını görünür kılıyor.</p>
             <p class="case-line"><strong>Araçlar:</strong> Google Sheets, Excel, Pivot, raporlama otomasyonu.</p>
@@ -313,9 +315,48 @@
             <div class="project-actions">
               <a class="btn btn-primary btn-sm" href="reports/sheets-acente-performans.html">Detaylı İnceleme</a>
               <a class="btn btn-ghost btn-sm" href="/reports/sheets-acente-performans.html#dashboard">Dashboard Gör</a>
+              <a class="btn btn-link btn-sm" href="assets/reports/rapor-ozeti-placeholder.txt" download data-track="report_download">Rapor Özeti İndir</a>
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section id="case-study" class="panel reveal">
+      <div class="section-header">
+        <h2>Interactive Case Study</h2>
+        <p>Filtrelenebilir vaka kartları ve canlı metriklerle hızlı içgörü görünümü.</p>
+      </div>
+      <div class="case-filters" role="group" aria-label="Vaka filtresi">
+        <button class="case-filter is-active" type="button" data-filter="all">Tümü</button>
+        <button class="case-filter" type="button" data-filter="forecasting">Forecasting</button>
+        <button class="case-filter" type="button" data-filter="risk">Risk</button>
+        <button class="case-filter" type="button" data-filter="dashboard">Dashboard</button>
+      </div>
+      <div class="case-metrics">
+        <article class="metric-badge"><strong id="caseVisibleCount">3</strong> vaka görüntüleniyor</article>
+        <article class="metric-badge">Toplam etki: <strong id="caseImpact">+38</strong></article>
+        <article class="metric-badge">Odak alanı: <strong id="caseFocus">Tümü</strong></article>
+      </div>
+      <div class="cards case-cards" id="caseCards">
+        <article class="card case-item" data-tags="forecasting,dashboard" data-impact="18">
+          <h3>Havayolu Talep Tahmini</h3>
+          <p class="case-line"><strong>Problem:</strong> Dönemsel talep değişimi planlamayı zorlaştırıyordu.</p>
+          <p class="case-line"><strong>Yaklaşım:</strong> Trend + sezon etkisi ile tahmin modeli kurgulandı.</p>
+          <p class="case-line"><strong>Sonuç:</strong> Tahmin doğruluğu artışı ve daha hızlı karar döngüsü.</p>
+        </article>
+        <article class="card case-item" data-tags="risk" data-impact="12">
+          <h3>İptal/Değişim Risk Skoru</h3>
+          <p class="case-line"><strong>Problem:</strong> Belirsiz işlemler finansal kayıp üretebiliyordu.</p>
+          <p class="case-line"><strong>Yaklaşım:</strong> Bulanık modelleme ile risk ağırlıkları hesaplandı.</p>
+          <p class="case-line"><strong>Sonuç:</strong> Erken tespit oranı yükseldi, manuel yük azaldı.</p>
+        </article>
+        <article class="card case-item" data-tags="dashboard" data-impact="8">
+          <h3>Power BI KPI Dashboard</h3>
+          <p class="case-line"><strong>Problem:</strong> KPI takibi dağınık kaynaklar nedeniyle yavaştı.</p>
+          <p class="case-line"><strong>Yaklaşım:</strong> Tek panelde filtrelenebilir KPI mimarisi kuruldu.</p>
+          <p class="case-line"><strong>Sonuç:</strong> Yönetim raporlarına erişim süresi ciddi şekilde kısaldı.</p>
+        </article>
       </div>
     </section>
 
@@ -357,6 +398,27 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <section id="oyunlar" class="panel reveal">
+      <div class="section-header">
+        <h2>Oyunlar</h2>
+        <p>Analitik düşünceyi eğlenceli bir deneyime dönüştüren mini etkileşimler.</p>
+      </div>
+      <article class="card">
+        <div class="card-media" aria-hidden="true"></div>
+        <h3>Uçuş Akışı Mini Game</h3>
+        <p class="case-line"><strong>Hedef:</strong> Yakıt bonuslarını toplayıp türbülanstan kaçınarak skoru artır.</p>
+        <p class="case-line"><strong>Odak:</strong> Hızlı karar alma, dikkat ve tempo yönetimi.</p>
+        <div class="badge-list">
+          <span class="card-tag">Canvas</span>
+          <span class="card-tag">JavaScript</span>
+          <span class="card-tag">Interactive</span>
+        </div>
+        <div class="project-actions">
+          <a class="btn btn-primary btn-sm" href="play/index.html">Oyunu Aç</a>
+        </div>
+      </article>
     </section>
 
     <section id="resume" class="panel reveal">
@@ -425,7 +487,7 @@
           </div>
         </article>
       </div>
-      <a class="btn btn-primary" href="assets/Nebi-Seker-CV.pdf" target="_blank" rel="noreferrer">CV İndir (PDF)</a>
+      <a class="btn btn-primary" href="assets/Nebi-Seker-CV.pdf" target="_blank" rel="noreferrer" data-track="cv_download">CV İndir (PDF)</a>
     </section>
 
     <section id="iletisim" class="panel reveal">

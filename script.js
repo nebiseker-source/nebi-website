@@ -27,6 +27,7 @@ const setActiveNav = () => {
   const isBlogPage = /\/blog(\/|$)/.test(path);
   const isReportPage = /\/reports(\/|$)/.test(path);
   const isCertificatePage = /\/certificates(\/|$)/.test(path);
+  const isPlayPage = /\/play(\/|$)/.test(path);
   const isHomePath = /\/$|\/index\.html$/.test(path);
 
   navLinks.forEach((link) => {
@@ -49,6 +50,11 @@ const setActiveNav = () => {
     }
 
     if (isCertificatePage && href.includes("#sertifikalar")) {
+      link.classList.add("active");
+      return;
+    }
+
+    if (isPlayPage && /\/play\/index\.html$|^index\.html$/.test(href)) {
       link.classList.add("active");
     }
   });
@@ -98,3 +104,113 @@ if (!reduceMotion) {
     }
   });
 }
+
+const applyContentData = async () => {
+  const localOverride = localStorage.getItem("nebi_content_override");
+  let data = {};
+
+  if (localOverride) {
+    try {
+      data = JSON.parse(localOverride);
+    } catch {
+      data = {};
+    }
+  }
+
+  if (!Object.keys(data).length) {
+    try {
+      const res = await fetch("/assets/data/site-content.json", { cache: "no-store" });
+      data = await res.json();
+    } catch {
+      data = {};
+    }
+  }
+
+  document.querySelectorAll("[data-content-key]").forEach((el) => {
+    const key = el.getAttribute("data-content-key");
+    if (key && typeof data[key] === "string") {
+      el.textContent = data[key];
+    }
+  });
+};
+
+const setupCaseFilters = () => {
+  const filters = Array.from(document.querySelectorAll(".case-filter"));
+  const items = Array.from(document.querySelectorAll(".case-item"));
+  const visibleCount = document.getElementById("caseVisibleCount");
+  const impactEl = document.getElementById("caseImpact");
+  const focusEl = document.getElementById("caseFocus");
+  if (!filters.length || !items.length) return;
+
+  const updateMetrics = (label) => {
+    const visible = items.filter((item) => !item.classList.contains("is-hidden"));
+    const impact = visible.reduce((sum, item) => sum + Number(item.dataset.impact || 0), 0);
+    if (visibleCount) visibleCount.textContent = String(visible.length);
+    if (impactEl) impactEl.textContent = `+${impact}`;
+    if (focusEl) focusEl.textContent = label;
+  };
+
+  filters.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filters.forEach((f) => f.classList.remove("is-active"));
+      btn.classList.add("is-active");
+      const filter = btn.dataset.filter || "all";
+      items.forEach((item) => {
+        const tags = (item.dataset.tags || "").split(",");
+        const show = filter === "all" || tags.includes(filter);
+        item.classList.toggle("is-hidden", !show);
+      });
+      updateMetrics(btn.textContent || "Tümü");
+    });
+  });
+
+  updateMetrics("Tümü");
+};
+
+const trackEvent = (eventName, metadata = {}) => {
+  const key = "nebi_event_log";
+  let existing = [];
+  try {
+    existing = JSON.parse(localStorage.getItem(key) || "[]");
+  } catch {
+    existing = [];
+  }
+  existing.push({
+    event: eventName,
+    metadata,
+    ts: new Date().toISOString(),
+  });
+  localStorage.setItem(key, JSON.stringify(existing.slice(-200)));
+};
+
+const setupEventTracking = () => {
+  document.querySelectorAll("[data-track]").forEach((el) => {
+    el.addEventListener("click", () => {
+      const eventName = el.getAttribute("data-track") || "click";
+      const label = (el.textContent || "").trim();
+      trackEvent(eventName, { label, href: el.getAttribute("href") || "" });
+    });
+  });
+};
+
+const setupHeroAbTest = () => {
+  const cta = document.getElementById("heroPrimaryCta");
+  if (!cta) return;
+  const key = "nebi_ab_hero_cta";
+  let variant = localStorage.getItem(key);
+  if (!variant) {
+    variant = Math.random() > 0.5 ? "A" : "B";
+    localStorage.setItem(key, variant);
+  }
+
+  if (variant === "B") {
+    cta.textContent = "Projeleri Gör";
+  }
+
+  cta.setAttribute("data-track", `hero_primary_cta_${variant}`);
+};
+
+applyContentData();
+setupCaseFilters();
+setupEventTracking();
+setupHeroAbTest();
